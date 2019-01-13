@@ -1,0 +1,10 @@
+{
+	"StarCraft2theSpireMod:BasicStrikeofProtoss": {
+		"NAME": "打击",
+		"DESCRIPTION": "造成 !D! 点伤害。"
+	},
+	"StarCraft2theSpireMod:BasicDefendofProtoss": {
+		"NAME": "防御",
+		"DESCRIPTION": "获得 !B! 点格挡。"
+	}
+}

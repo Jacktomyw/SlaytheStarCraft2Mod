@@ -1,0 +1,9 @@
+{
+	"StarCraft2theSpireMod:ARelic": {
+		"NAME": "一个遗物",
+		"FLAVOR": "这是一个遗物。",
+		"DESCRIPTIONS": [
+			"这是一个遗物的效果。"
+		]
+	}
+}
