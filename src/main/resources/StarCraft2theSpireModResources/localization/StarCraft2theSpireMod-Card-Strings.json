@@ -6,5 +6,17 @@
 	"StarCraft2theSpireMod:Basic_Defend_Protoss": {
 		"NAME": "防御",
 		"DESCRIPTION": "获得 !B! 点格挡。"
+	},
+	"StarCraft2theSpireMod:BatterSlash":{
+		"NAME": "挥砍连击",
+		"DESCRIPTION": "造成 !D! 点伤害 !M! 次。"
+	},
+	"StarCraft2theSpireMod:TearSlash":{
+		"NAME": "撕裂斩",
+		"DESCRIPTION": "造成 !D! 点伤害，如果造成了未被格挡的伤害，给予 !M! 层撕裂。"
+	},
+	"StarCraft2theSpireMod:VoidStrike":{
+		"NAME": "虚空打击",
+		"DESCRIPTION": "造成 !D! 点伤害 !M!次。"
 	}
 }

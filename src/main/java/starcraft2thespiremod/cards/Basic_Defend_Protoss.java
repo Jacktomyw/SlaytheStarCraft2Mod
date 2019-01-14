@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
+import basemod.helpers.BaseModCardTags;
 import starcraft2thespiremod.patches.AbstractCardEnum;
 import starcraft2thespiremod.StarCraft2theSpireMod;
 
@@ -32,6 +33,7 @@ public class Basic_Defend_Protoss extends CustomCard{
 	public Basic_Defend_Protoss() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 		this.baseBlock = BLOCK;
+		tags.add(BaseModCardTags.BASIC_DEFEND);
 	}
 	// Actions the card should do.
     @Override

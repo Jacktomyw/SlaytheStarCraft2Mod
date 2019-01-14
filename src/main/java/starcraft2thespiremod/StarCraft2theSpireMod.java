@@ -27,11 +27,9 @@ import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.DamageHooks.ApplyPowers;
-import starcraft2thespiremod.cards.Basic_Defend_Protoss;
-import starcraft2thespiremod.cards.Basic_Strike_Protoss;
-import starcraft2thespiremod.characters.Protoss;
-import starcraft2thespiremod.patches.AbstractCardEnum;
-import starcraft2thespiremod.patches.ProtossEnum;
+import starcraft2thespiremod.cards.*;
+import starcraft2thespiremod.characters.*;
+import starcraft2thespiremod.patches.*;
 
 @SpireInitializer
 public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber,
@@ -80,6 +78,10 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     //TODO add card imgs here
     public static final String BASIC_STRIKE_PROTOSS = makeExample("cards/attack");//should be cards/basic_strike_p.png
     public static final String BASIC_DEFEND_PROTOSS = makeExample("cards/skill");//should be...
+    public static final String BATTERSLASH = makeExample("cards/attack");//should be...
+    public static final String TEARSLASH = makeExample("cards/attack");//should be...
+    public static final String VOIDSTRIKE = makeExample("cards/attack");//should be...
+    
 // Power images
     //TODO add power imgs here
     public static final String CONCENTRATED_POWER = makeExample("powers/Concentrated_power");
@@ -240,11 +242,18 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
 		// TODO add cards here;
         BaseMod.addCard(new Basic_Strike_Protoss());
         BaseMod.addCard(new Basic_Defend_Protoss());
+        BaseMod.addCard(new BatterSlash());
+        BaseMod.addCard(new TearSlash());
+        BaseMod.addCard(new VoidStrike());
 
         logger.info("Making sure the cards are unlocked.");
         // TODO Unlock the cards here
         UnlockTracker.unlockCard(Basic_Strike_Protoss.ID);
         UnlockTracker.unlockCard(Basic_Defend_Protoss.ID);
+        UnlockTracker.unlockCard(BatterSlash.ID);
+        UnlockTracker.unlockCard(TearSlash.ID);
+        UnlockTracker.unlockCard(VoidStrike.ID);
+        
         
         logger.info("Cards - added!");
 	}

@@ -10,36 +10,33 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import starcraft2thespiremod.StarCraft2theSpireMod;
 import starcraft2thespiremod.patches.AbstractCardEnum;
 
-public class Basic_Strike_Protoss extends CustomCard{
+public class XelNagaProphecy extends CustomCard{
 
 	
-	public static final String ID = starcraft2thespiremod.StarCraft2theSpireMod.makeID("Basic_Strike_Protoss");
+	public static final String ID = starcraft2thespiremod.StarCraft2theSpireMod.makeID("XelNagaProphecy");
 	private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 	
-	public static final String IMG = StarCraft2theSpireMod.makePath(StarCraft2theSpireMod.BASIC_STRIKE_PROTOSS);
+	public static final String IMG = StarCraft2theSpireMod.makePath(StarCraft2theSpireMod.XelNagaProphecy);
 	
 	public static final String NAME = cardStrings.NAME;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 	
-	private static final CardRarity RARITY = CardRarity.BASIC;
-	private static final CardTarget TARGET = CardTarget.ENEMY;
-	private static final CardType TYPE = CardType.ATTACK;
+	private static final CardRarity RARITY = CardRarity.;
+	private static final CardTarget TARGET = CardTarget.;
+	private static final CardType TYPE = CardType.;
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
-	private static final int COST = 1;
-	private static final int DAMAGE = 7;
-	private static final int UPGRADE_PLUS_DMG = 2;
+	private static final int COST = ;
+	private static final int DAMAGE = ;
+	private static final int UPGRADE_PLUS_DMG = ;
 	
-	public Basic_Strike_Protoss() {
+	public XelNagaProphecy() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 		this.baseDamage = DAMAGE;
-		tags.add(BaseModCardTags.BASIC_STRIKE);
-		tags.add(CardTags.STRIKE);
-		}
+	}
 	
 	@Override
 	public void use(AbstractPlayer p,AbstractMonster m) {
@@ -49,7 +46,7 @@ public class Basic_Strike_Protoss extends CustomCard{
 	
 	@Override
 	public AbstractCard makeCopy() {
-		return new Basic_Strike_Protoss();
+		return new XelNagaProphecy();
 	}
 	
 	@Override
