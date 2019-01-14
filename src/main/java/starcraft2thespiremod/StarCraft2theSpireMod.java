@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -24,9 +26,14 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.DamageHooks.ApplyPowers;
+import starcraft2thespiremod.cards.Basic_Defend_Protoss;
+import starcraft2thespiremod.cards.Basic_Strike_Protoss;
+import starcraft2thespiremod.characters.Protoss;
 import starcraft2thespiremod.patches.AbstractCardEnum;
 import starcraft2thespiremod.patches.ProtossEnum;
 
+@SpireInitializer
 public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber,
 		EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber {
 	
@@ -67,20 +74,32 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     private static final String ATTACK_PROTOSS_BLUE_PORTRAIT = makeExample("1024/bg_attack_protoss_blue");
     private static final String POWER_PROTOSS_BLUE_PORTRAIT = makeExample("1024/bg_power_protoss_blue");
     private static final String SKILL_PROTOSS_BLUE_PORTRAIT = makeExample("1024/bg_skill_protoss_blue");
-    private static final String ENERGY_ORB_PROTOSS_BLUE_PORTRAIT = makeExample("1024/card_protoss_blue_orb.png");
+    private static final String ENERGY_ORB_PROTOSS_BLUE_PORTRAIT = makeExample("1024/card_protoss_blue_orb");
 
 // Card images
     //TODO add card imgs here
-    public static final String BASIC_STRIKE_P = makeExample("cards/attack");//should be cards/basic_strike_p.png
-
+    public static final String BASIC_STRIKE_PROTOSS = makeExample("cards/attack");//should be cards/basic_strike_p.png
+    public static final String BASIC_DEFEND_PROTOSS = makeExample("cards/skill");//should be...
 // Power images
     //TODO add power imgs here
+    public static final String CONCENTRATED_POWER = makeExample("powers/Concentrated_power");
     public static final String DOUBLE_BLADE_POWER = makeExample("powers/DoubleBlade_power");
+    public static final String PSIONIC_POWER = makeExample("powers/Psionic_power");
+    public static final String SHIELD_POWER = makeExample("powers/Shield_power");
+    public static final String TEARING_POWER = makeExample("powers/Tearing_power");
 
 // Relic images
     //TODO add relic imgs here
-    public static final String A_RELIC = makeExample("relics/ARelic");
-    public static final String A_RELIC_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String IanCrystal = makeExample("relics/IanCrystal");
+    public static final String IanCrystal_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String KeyStone = makeExample("relics/KeyStone");
+    public static final String KeyStone_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String Khala = makeExample("relics/Khala");
+    public static final String Khala_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String KhaydarinAmulet = makeExample("relics/KhaydarinAmulet");
+    public static final String KhaydarinAmulet_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String MiniVoidSeeker = makeExample("relics/MiniVoidSeeker");
+    public static final String MiniVoidSeeker_OUTLINE = makeExample("relics/outline/ARelic");
     
 // Character assets
     //TODO add character assets here
@@ -100,8 +119,8 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     
 //Animations atlas and JSON files
     //TODO this part will be written after animation part complete
-    //public static final String PROTOSS_SKELETON_ATLAS = "char/protoss/skeleton.atlas";
-    //public static final String PROTOSS_SKELETON_JSON = "char/protoss/skeleton.json";
+    public static final String PROTOSS_SKELETON_ATLAS = "char/protoss/skeleton.atlas";
+    public static final String PROTOSS_SKELETON_JSON = "char/protoss/skeleton.json";
     
 //=============================IMAGE PATHS========================
     /**
@@ -148,8 +167,8 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
 		//TODO add characters here
 		logger.info("begin editing characters. " + "Add " + ProtossEnum.PROTOSS.toString());
 		
-//	    BaseMod.addCharacter(new TheDefault("the Default", TheDefaultEnum.THE_DEFAULT),
-//	            makePath(THE_DEFAULT_BUTTON), makePath(THE_DEFAULT_PORTRAIT), TheDefaultEnum.THE_DEFAULT);
+	    BaseMod.addCharacter(new Protoss("Protoss", ProtossEnum.PROTOSS),
+	            makePath(PROTOSS_BUTTON), makePath(PROTOSS_BACKGROUND), ProtossEnum.PROTOSS);
 
 		//TODO add character-class potions here
 //		logger.info("begin editing potions");
@@ -219,11 +238,13 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
 //      
 		logger.info("Add Cards");
 		// TODO add cards here;
-//        BaseMod.addCard(new DefaultCommonAttack());
+        BaseMod.addCard(new Basic_Strike_Protoss());
+        BaseMod.addCard(new Basic_Defend_Protoss());
 
         logger.info("Making sure the cards are unlocked.");
         // TODO Unlock the cards here
-//        UnlockTracker.unlockCard(DefaultCommonAttack.ID);
+        UnlockTracker.unlockCard(Basic_Strike_Protoss.ID);
+        UnlockTracker.unlockCard(Basic_Defend_Protoss.ID);
         
         logger.info("Cards - added!");
 	}

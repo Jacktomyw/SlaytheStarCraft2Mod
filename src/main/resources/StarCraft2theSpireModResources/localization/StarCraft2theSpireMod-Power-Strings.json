@@ -1,6 +1,26 @@
 {
-	"StarCraft2theSpireMod:DoubleBlade": {
+	"StarCraft2theSpireMod:DoubleBladePower": {
         "NAME": "双刃",
         "DESCRIPTIONS": ["你这回合已经打出过攻击牌。"]
+	},
+	"StarCraft2theSpireMod:ConcentratedPower": {
+        "NAME": "专注",
+        "DESCRIPTIONS": ["拥有专注关键词的牌将产生额外效果。"]
+	},
+	"StarCraft2theSpireMod:TearingPower": {
+        "NAME": "撕裂",
+        "DESCRIPTIONS": ["每回合结束时受到","点伤害。"]
+	},
+	"StarCraft2theSpireMod:PsionicPower": {
+        "NAME": "灵能",
+        "DESCRIPTIONS": ["你下一张造成伤害或获得护盾的牌数值加","。"]
+	},
+	"StarCraft2theSpireMod:ShieldPower": {
+        "NAME": "护盾",
+        "DESCRIPTIONS": ["你的护盾还能抵挡","点伤害。"]
+	},
+	"StarCraft2theSpireMod:ParryPower": {
+        "NAME": "招架",
+        "DESCRIPTIONS": ["你这回合已经打出过技能牌。"]
 	}
 }
