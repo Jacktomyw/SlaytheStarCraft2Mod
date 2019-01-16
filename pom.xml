@@ -62,7 +62,7 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <copy file="target/Starcraft2TheSpireMod.jar" tofile="../lib/Starcraft2TheSpireMod.jar"/>
+                                <copy file="target/Starcraft2TheSpireMod.jar" tofile="F:\Steam\steamapps\common\SlayTheSpire\mods\Starcraft2TheSpireMod.jar"/>
                             </target>
                         </configuration>
                         <goals>

@@ -22,5 +22,9 @@
 	"StarCraft2theSpireMod:ParryPower": {
         "NAME": "招架",
         "DESCRIPTIONS": ["你这回合已经打出过技能牌。"]
+	},
+	"StarCraft2theSpireMod:DarknessApproachPower": {
+		"NAME": "黑暗迫袭",
+		"DESCRIPTIONS": ["在回合结束时获得","层灵能。"]
 	}
 }

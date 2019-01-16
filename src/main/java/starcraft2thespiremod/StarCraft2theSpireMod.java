@@ -1,39 +1,51 @@
 package starcraft2thespiremod;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer.PlayerClass;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.EventHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.map.MapRoomNode;
+import com.megacrit.cardcrawl.map.RoomTypeAssigner;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
+import com.megacrit.cardcrawl.rooms.EventRoom;
+import com.megacrit.cardcrawl.rooms.MonsterRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import basemod.BaseMod;
 import basemod.ModLabel;
 import basemod.ModPanel;
-import basemod.helpers.RelicType;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.PostBattleSubscriber;
+import basemod.interfaces.PostDungeonInitializeSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
-import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.DamageHooks.ApplyPowers;
 import starcraft2thespiremod.cards.*;
 import starcraft2thespiremod.characters.*;
+import starcraft2thespiremod.events.ProtossLeaders;
 import starcraft2thespiremod.patches.*;
+import starcraft2thespiremod.relics.*;
+import starcraft2thespiremod.rooms.ProtossLeadersRoom;
 
 @SpireInitializer
 public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber,
-		EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber {
+		EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber{
 	
 	public static final Logger logger = LogManager.getLogger(StarCraft2theSpireMod.class.getName());
 
@@ -63,24 +75,47 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     }
 // Card backgrounds
     //TODO add character card background and orb background here
-    private static final String ATTACK_PROTOSS_BLUE = makeExample("512/bg_attack_protoss_blue");
-    private static final String POWER_PROTOSS_BLUE = makeExample("512/bg_power_protoss_blue");
-    private static final String SKILL_PROTOSS_BLUE = makeExample("512/bg_skill_protoss_blue");
-    private static final String ENERGY_ORB_PROTOSS_BLUE = makeExample("512/card_protoss_blue_orb");
-    private static final String CARD_PROTOSS_BLUE_ENERGY_ORB = makeExample("512/card_protoss_blue_small_orb");
+    private static final String ATTACK_PROTOSS_BLUE = "512/bg_attack_protoss_blue.png";
+    private static final String POWER_PROTOSS_BLUE ="512/bg_power_protoss_blue.png";
+    private static final String SKILL_PROTOSS_BLUE = "512/bg_skill_protoss_blue.png";
+    private static final String ENERGY_ORB_PROTOSS_BLUE = "512/card_protoss_blue_orb.png";
+    private static final String CARD_PROTOSS_BLUE_ENERGY_ORB = "512/card_protoss_blue_small_orb.png";
 
-    private static final String ATTACK_PROTOSS_BLUE_PORTRAIT = makeExample("1024/bg_attack_protoss_blue");
-    private static final String POWER_PROTOSS_BLUE_PORTRAIT = makeExample("1024/bg_power_protoss_blue");
-    private static final String SKILL_PROTOSS_BLUE_PORTRAIT = makeExample("1024/bg_skill_protoss_blue");
-    private static final String ENERGY_ORB_PROTOSS_BLUE_PORTRAIT = makeExample("1024/card_protoss_blue_orb");
+    private static final String ATTACK_PROTOSS_BLUE_PORTRAIT = "1024/bg_attack_protoss_blue.png";
+    private static final String POWER_PROTOSS_BLUE_PORTRAIT = "1024/bg_power_protoss_blue.png";
+    private static final String SKILL_PROTOSS_BLUE_PORTRAIT = "1024/bg_skill_protoss_blue.png";
+    private static final String ENERGY_ORB_PROTOSS_BLUE_PORTRAIT = "1024/card_protoss_blue_orb.png";
 
 // Card images
     //TODO add card imgs here
     public static final String BASIC_STRIKE_PROTOSS = makeExample("cards/attack");//should be cards/basic_strike_p.png
     public static final String BASIC_DEFEND_PROTOSS = makeExample("cards/skill");//should be...
     public static final String BATTERSLASH = makeExample("cards/attack");//should be...
+    public static final String BLADECHARGE = makeExample("cards/skill");//should be...
+    public static final String BLADEOFSPACE = makeExample("cards/attack");//should be...
+	public static final String BLINK = makeExample("cards/skill");//should be...
+    public static final String DARKNESSAPPROACH = makeExample("cards/power");//should be...
+    public static final String GIFTSFROMXELNAGA = makeExample("cards/power");//should be...
+    public static final String INTOTHESHADOW = makeExample("cards/skill");//should be...
+    public static final String MASTERGRADEWARPPINGBLADE = makeExample("cards/attack");//should be...
+    public static final String MEDITATION = makeExample("cards/skill");//should be...
+    public static final String OBLIVIONDESCENDS = makeExample("cards/attack");//should be...
+    public static final String POWEROFNERAZIM = makeExample("cards/skill");//should be...
+    public static final String PSIONICLIGHTBLADE = makeExample("cards/attack");//should be...
+    public static final String SHADOWBARRIER = makeExample("cards/skill");//should be...
+    public static final String SHADOWRUSH = makeExample("cards/skill");//should be...
+    public static final String SHADOWSTRIKE = makeExample("cards/attack");//should be...
+    public static final String SINGULARITYSTUB = makeExample("cards/attack");//should be...
     public static final String TEARSLASH = makeExample("cards/attack");//should be...
+    public static final String TWILIGHTDESCENDS = makeExample("cards/skill");//should be...
+    public static final String VOIDIMPRISON = makeExample("cards/attack");//should be...
+    public static final String VOIDPOWERCANNON = makeExample("cards/attack");//should be...
+    public static final String VOIDSNEAKATTACK = makeExample("cards/skill");//should be...
+    public static final String VOIDSPIRALBALL = makeExample("cards/attack");//should be...
     public static final String VOIDSTRIKE = makeExample("cards/attack");//should be...
+    public static final String WAYOFDARKTEMPLAR = makeExample("cards/power");//should be...
+    public static final String WORMHOLE = makeExample("cards/skill");//should be...
+    public static final String XELNAGAPROPHECY = makeExample("cards/skill");//should be...
     
 // Power images
     //TODO add power imgs here
@@ -89,9 +124,12 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     public static final String PSIONIC_POWER = makeExample("powers/Psionic_power");
     public static final String SHIELD_POWER = makeExample("powers/Shield_power");
     public static final String TEARING_POWER = makeExample("powers/Tearing_power");
-
+    public static final String DARKNESSAPPROACH_POWER = makeExample("powers/DarknessApproach_power");
 // Relic images
     //TODO add relic imgs here
+    public static final String HeartofProtoss = makeExample("relics/HeartofProtoss");
+    public static final String HeartofProtoss_USED = makeExample("relics/HeartofProtoss");		//need to change
+    public static final String HeartofProtoss_OUTLINE = makeExample("relics/outline/ARelic");
     public static final String IanCrystal = makeExample("relics/IanCrystal");
     public static final String IanCrystal_OUTLINE = makeExample("relics/outline/ARelic");
     public static final String KeyStone = makeExample("relics/KeyStone");
@@ -102,6 +140,10 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     public static final String KhaydarinAmulet_OUTLINE = makeExample("relics/outline/ARelic");
     public static final String MiniVoidSeeker = makeExample("relics/MiniVoidSeeker");
     public static final String MiniVoidSeeker_OUTLINE = makeExample("relics/outline/ARelic");
+    
+// Event images
+    //TODO add event imgs here
+    public static final String ProtossLeaders_IMG = makeExample("relics/ARelic");	//need to change
     
 // Character assets
     //TODO add character assets here
@@ -123,6 +165,7 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     //TODO this part will be written after animation part complete
     public static final String PROTOSS_SKELETON_ATLAS = "char/protoss/skeleton.atlas";
     public static final String PROTOSS_SKELETON_JSON = "char/protoss/skeleton.json";
+
     
 //=============================IMAGE PATHS========================
     /**
@@ -200,6 +243,9 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
 
         logger.info("Done loading badge Image and mod options");
 
+        logger.info("Add events");
+//        BaseMod.addEvent(ProtossLeaders.ID, ProtossLeaders.class);
+        
 		receiveEditPotions();
 
 	}
@@ -221,7 +267,7 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
 		logger.info("Add relics");
 		//TODO add relics here
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        //BaseMod.addRelicToCustomPool(new PlaceholderRelic(), AbstractCardEnum.DEFAULT_GRAY);
+        BaseMod.addRelicToCustomPool(new HeartofProtoss(), AbstractCardEnum.PROTOSS_BLUE);
 
         // This adds a relic to the Shared pool. Every character can find this relic.
         //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
@@ -243,6 +289,10 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
         BaseMod.addCard(new Basic_Strike_Protoss());
         BaseMod.addCard(new Basic_Defend_Protoss());
         BaseMod.addCard(new BatterSlash());
+        BaseMod.addCard(new BladeCharge());
+        BaseMod.addCard(new BladeofSpace());
+        BaseMod.addCard(new Blink());
+        BaseMod.addCard(new DarknessApproach());
         BaseMod.addCard(new TearSlash());
         BaseMod.addCard(new VoidStrike());
 
@@ -251,6 +301,10 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
         UnlockTracker.unlockCard(Basic_Strike_Protoss.ID);
         UnlockTracker.unlockCard(Basic_Defend_Protoss.ID);
         UnlockTracker.unlockCard(BatterSlash.ID);
+        UnlockTracker.unlockCard(BladeCharge.ID);
+        UnlockTracker.unlockCard(BladeofSpace.ID);
+        UnlockTracker.unlockCard(Blink.ID);
+        UnlockTracker.unlockCard(DarknessApproach.ID);
         UnlockTracker.unlockCard(TearSlash.ID);
         UnlockTracker.unlockCard(VoidStrike.ID);
         
@@ -279,7 +333,10 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
                 "StarCraft2theSpireModResources/localization/StarCraft2theSpireMod-Potion-Strings.json");
-
+        
+        // EventStrings
+        BaseMod.loadCustomStringsFile(EventStrings.class, 
+        		"StarCraft2theSpireModResources/localization/StarCraft2theSpireMod-Event-Strings.json");
         logger.info("Done edittting strings");
 	}
 
@@ -296,5 +353,21 @@ public class StarCraft2theSpireMod implements EditCharactersSubscriber, EditCard
     // in order to avoid conflics if any other mod uses the same ID.
 	public static String makeID(String idText) {
 	    return "StarCraft2theSpireMod:" + idText;
+	}
+
+	public static void receivePostGenerateMap() {
+		if(AbstractDungeon.id.equals("Exordium")) {
+			if(AbstractDungeon.player.hasRelic(StarCraft2theSpireMod.makeID("HeartofProtoss"))) {
+			
+			Iterator var2 = ((ArrayList<MapRoomNode>) AbstractDungeon.map.get(0)).iterator();
+
+			while (var2.hasNext()) {
+				MapRoomNode n = (MapRoomNode) var2.next();
+						n.setRoom(new ProtossLeadersRoom());
+				
+			}
+			logger.info("room changed");
+			}
+		}
 	}
 }

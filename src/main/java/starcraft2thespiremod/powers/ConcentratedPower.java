@@ -2,6 +2,7 @@ package starcraft2thespiremod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.patches.bothInterfaces.OnReceivePowerPatch.ApplyPower;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,7 +13,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower.PowerType;
 
 import starcraft2thespiremod.StarCraft2theSpireMod;
 
-public class ConcentratedPower extends AbstractPower {
+public class ConcentratedPower extends AbstractPower implements NonStackablePower{
 	public AbstractCreature source;
 	
 	public static final String POWER_ID = starcraft2thespiremod.StarCraft2theSpireMod.makeID("ConcentratedPower");
@@ -26,10 +27,10 @@ public class ConcentratedPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.isTurnBased = false;
+        this.isTurnBased = true;
         this.img = new Texture(IMG);
         this.source = source;
-        
+        this.description = DESCRIPTIONS[0];
 	}
 
 	@Override

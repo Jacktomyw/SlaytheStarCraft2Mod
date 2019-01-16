@@ -23,6 +23,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import starcraft2thespiremod.patches.AbstractCardEnum;
+import starcraft2thespiremod.relics.HeartofProtoss;
 import starcraft2thespiremod.StarCraft2theSpireMod;
 import starcraft2thespiremod.cards.Basic_Defend_Protoss;
 import starcraft2thespiremod.cards.Basic_Strike_Protoss;
@@ -77,7 +78,7 @@ public class Protoss extends CustomPlayer{
     @Override
     public CharSelectInfo getLoadout() {
     	return new CharSelectInfo("Protoss",
-                "神族 " + "神之长子 ",
+                "神族 NL " + "神之长子 ",
                 STARTING_HP, MAX_HP, ORB_SLOTS, STARTING_GOLD, CARD_DRAW, this, getStartingRelics(),
                 getStartingDeck(), false);
     }
@@ -101,7 +102,8 @@ public class Protoss extends CustomPlayer{
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-
+        retVal.add(HeartofProtoss.ID);
+        UnlockTracker.markRelicAsSeen(HeartofProtoss.ID);
         
         return retVal;
     }

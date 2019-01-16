@@ -31,8 +31,8 @@ public class Basic_Strike_Protoss extends CustomCard{
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
 	private static final int COST = 1;
-	private static final int DAMAGE = 7;
-	private static final int UPGRADE_PLUS_DMG = 2;
+	private static final int DAMAGE = 6;
+	private static final int UPGRADE_PLUS_DMG = 3;
 	
 	public Basic_Strike_Protoss() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

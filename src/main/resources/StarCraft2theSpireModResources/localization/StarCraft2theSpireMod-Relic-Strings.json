@@ -33,6 +33,13 @@
 		"DESCRIPTIONS": [
 			"获得此遗物时，从亮剑和妙计中选择一张加入你的卡组"
 		]
+	},
+	"StarCraft2theSpireMod:HeartofProtoss": {
+		"NAME": "星灵之心",
+		"FLAVOR": "这颗心似乎注入了著名星灵领袖们的灵魂。",
+		"DESCRIPTIONS": [
+			"这颗心一定会派上用场的。",
+			"你已经觐见过三位领袖了。"
+		]
 	}
-	
 }

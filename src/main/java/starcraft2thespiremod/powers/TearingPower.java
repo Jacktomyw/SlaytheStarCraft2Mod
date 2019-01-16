@@ -1,5 +1,6 @@
 package starcraft2thespiremod.powers;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,25 +12,27 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
 
+import starcraft2thespiremod.StarCraft2theSpireMod;
+
 public class TearingPower extends AbstractPower{
-	public static final String POWER_ID = "TearingPower";
+	public static final String POWER_ID = starcraft2thespiremod.StarCraft2theSpireMod.makeID("TearingPower");
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+	public static final String IMG = StarCraft2theSpireMod.makePath(StarCraft2theSpireMod.TEARING_POWER);
 	
-	public TearingPower(AbstractCreature owner, int poisonAmt) {
+	public TearingPower(AbstractCreature owner, int amount) {
 		this.name = NAME;
-		this.ID = "TearingPower";
+		this.ID = POWER_ID;
 		this.owner = owner;
-		this.amount = poisonAmt;
+		this.amount = amount;
 		if (this.amount >= 999) {
 			this.amount = 999;
 		}
-
 		this.updateDescription();
-		this.loadRegion("tearingPower");
 		this.type = PowerType.DEBUFF;
-		this.isTurnBased = true;
+		this.isTurnBased = false;
+		this.img = new Texture(IMG);
 	}
 
 	public void updateDescription() {
@@ -37,8 +40,8 @@ public class TearingPower extends AbstractPower{
 	}
 
 	@Override
-	public void atEndOfRound() {
-		if (AbstractDungeon.getCurrRoom().phase == RoomPhase.COMBAT
+	public void atEndOfTurn(boolean isPlayer) {
+		if (!isPlayer && AbstractDungeon.getCurrRoom().phase == RoomPhase.COMBAT
 				&& !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
 			this.flashWithoutSound();
 			AbstractDungeon.actionManager

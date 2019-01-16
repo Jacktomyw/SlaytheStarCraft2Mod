@@ -37,7 +37,7 @@ public class BatterSlash extends CustomCard{
 	public BatterSlash() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 		this.baseDamage = DAMAGE;
-		this.baseMagicNumber = TIMES;
+		this.baseMagicNumber = this.magicNumber = TIMES;
 	}
 	
 	@Override
