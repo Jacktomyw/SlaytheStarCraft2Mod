@@ -1,0 +1,30 @@
+{
+	"SlaytheStarCraft2Mod:DoubleBladePower": {
+        "NAME": "双刃",
+        "DESCRIPTIONS": ["你这回合已经打出过攻击牌。"]
+	},
+	"SlaytheStarCraft2Mod:ConcentratedPower": {
+        "NAME": "专注",
+        "DESCRIPTIONS": ["拥有专注关键词的牌将产生额外效果。"]
+	},
+	"SlaytheStarCraft2Mod:TearingPower": {
+        "NAME": "撕裂",
+        "DESCRIPTIONS": ["每回合结束时受到","点伤害。"]
+	},
+	"SlaytheStarCraft2Mod:PsionicPower": {
+        "NAME": "灵能",
+        "DESCRIPTIONS": ["你下一张造成伤害或获得护盾的牌数值加","。"]
+	},
+	"SlaytheStarCraft2Mod:ShieldPower": {
+        "NAME": "护盾",
+        "DESCRIPTIONS": ["你的护盾还能抵挡","点伤害。"]
+	},
+	"SlaytheStarCraft2Mod:ParryPower": {
+        "NAME": "招架",
+        "DESCRIPTIONS": ["你这回合已经打出过技能牌。"]
+	},
+	"SlaytheStarCraft2Mod:DarknessApproachPower": {
+		"NAME": "黑暗迫袭",
+		"DESCRIPTIONS": ["在回合结束时获得","层灵能。"]
+	}
+}

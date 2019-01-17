@@ -1,9 +1,9 @@
 {
-  "modid": "starcraft2thespiremod",
-  "name": "StarCraft II the Spire Mod",
+  "modid": "slaythestarcraft2mod",
+  "name": "Slay the StarCraft II Mod",
   "author_list": ["Jacktomyw"],
   "description": "This is a mod for STS in a STARCRAFT II theme.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "sts_version": "01-10-2019",
   "mts_version": "3.7.5",
   "dependencies": ["basemod","stslib"]

@@ -1,0 +1,45 @@
+{
+	"SlaytheStarCraft2Mod:MiniVoidSeeker": {
+		"NAME": "迷你虚空寻觅者",
+		"FLAVOR": "“如今，我们的创世者萨尔纳加……回来了。但回归是为了拯救？……还是毁灭？”",
+		"DESCRIPTIONS": [
+			"如果你在本回合内没有受到未被护盾和格挡抵消的伤害，或者你没有造成未被格挡的伤害，在下个回合获得专注和","。"
+		]
+	},
+	"SlaytheStarCraft2Mod:IanCrystal": {
+		"NAME": "伊安水晶",
+		"FLAVOR": "“詹姆斯·雷诺，我带来了末日的潮声。我挑开了未来的面纱，却只看到了……湮灭。”",
+		"DESCRIPTIONS": [
+			"每回合开始时，获得2层灵能"
+		]
+	},
+	"SlaytheStarCraft2Mod:Khala": {
+		"NAME": "卡拉",
+		"FLAVOR": "神圣的F2A连接着我们每一个人的意志！",
+		"DESCRIPTIONS": [
+			"如果你这回合打出了至少3张牌且所有的牌均为同一种类，获得10点护盾"
+		]
+	},
+	"SlaytheStarCraft2Mod:KeyStone": {
+		"NAME": "钥石",
+		"FLAVOR": "神圣的F2A连接着我们每一个人的意志！",
+		"DESCRIPTIONS": [
+			"如果你这回合打出了至少3张牌且所有的牌均为同一种类，获得10点护盾"
+		]
+	},
+	"SlaytheStarCraft2Mod:KhaydarinAmulet": {
+		"NAME": "卡达琳饰物",
+		"FLAVOR": "",
+		"DESCRIPTIONS": [
+			"获得此遗物时，从亮剑和妙计中选择一张加入你的卡组"
+		]
+	},
+	"SlaytheStarCraft2Mod:HeartofProtoss": {
+		"NAME": "星灵之心",
+		"FLAVOR": "这颗心似乎注入了著名星灵领袖们的灵魂。",
+		"DESCRIPTIONS": [
+			"这颗心一定会派上用场的。",
+			"你已经觐见过三位领袖了。"
+		]
+	}
+}

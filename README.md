@@ -1,4 +1,4 @@
-# StarCraft2TheSpireMod
+# SlaytheStarCraft2Mod
 
 This is a mod for Slay the Spire in a STARCRAFT II theme.
 
