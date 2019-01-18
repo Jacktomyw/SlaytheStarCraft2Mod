@@ -41,7 +41,7 @@ public class BladeofSpace extends CustomCard{
 	
 	@Override
 	public void use(AbstractPlayer p,AbstractMonster m) {
-		for(AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+		for(AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
 			AbstractDungeon.actionManager.addToBottom(new TearingAction(mo, new DamageInfo(mo, this.damage), 3));
 		}
 	}

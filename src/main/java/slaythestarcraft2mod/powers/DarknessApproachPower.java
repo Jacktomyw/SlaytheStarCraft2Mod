@@ -39,6 +39,7 @@ public class DarknessApproachPower extends AbstractPower {
 	@Override
 	public void atEndOfTurn(boolean isPlayer) {
 		if(isPlayer) {
+			this.flash();
 			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new PsionicPower(owner,this.amount), this.amount));
 		}
 	}

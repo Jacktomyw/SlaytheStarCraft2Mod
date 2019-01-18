@@ -1,7 +1,9 @@
 {
 	"SlaytheStarCraft2Mod:ProtossLeaders" :{
 		"NAME": "星灵领袖们",
-		"DESCRIPTIONS": ["选择你的截图导师："],
+		"DESCRIPTIONS": ["选择你的截图导师：",
+		"好了，现在踏上你自己的道路吧。",
+		"凡人，这不是你该来的地方，回去吧。"],
 		"OPTIONS":[
 		"跟随阿塔尼斯",
 		"跟随泽拉图",

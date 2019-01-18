@@ -1,15 +1,21 @@
 package slaythestarcraft2mod.events;
 
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 import slaythestarcraft2mod.SlaytheStarCraft2Mod;
+import slaythestarcraft2mod.cards.protoss.BladeCharge;
+import slaythestarcraft2mod.cards.protoss.ShadowStrike;
 import slaythestarcraft2mod.initializers.ImgInitializer;
 import slaythestarcraft2mod.relics.HeartofProtoss;
+import slaythestarcraft2mod.relics.MiniVoidSeeker;
 
 public class ProtossLeaders extends AbstractImageEvent {
 	public static final String ID = SlaytheStarCraft2Mod.makeID("ProtossLeaders");
@@ -32,6 +38,18 @@ public class ProtossLeaders extends AbstractImageEvent {
 		this.imageEventText.setDialogOption(FontHelper.colorString(OPTIONS[1], "g")); 
 		this.imageEventText.setDialogOption(FontHelper.colorString(OPTIONS[2], "r")); 
 		state = State.ENTERING;
+		
+		if(!AbstractDungeon.player.hasRelic(SlaytheStarCraft2Mod.makeID("HeartofProtoss"))){
+			//this should not happen
+			this.body = DESCRIPTIONS[2];
+			state = State.LEAVING;
+		}else {
+			if(AbstractDungeon.player.getRelic(SlaytheStarCraft2Mod.makeID("HeartofProtoss")).usedUp) {
+				//this should not happen too
+				this.body = DESCRIPTIONS[2];
+				state = State.LEAVING;
+			}
+		}
 	}
 	
 	@Override
@@ -44,10 +62,27 @@ public class ProtossLeaders extends AbstractImageEvent {
 		switch(state) {
 		case ENTERING: {
 			switch(button) {
-			
+			case 0:{
+				break;
+			}
+			case 1:{
+				AbstractCard startCard1 = new BladeCharge();
+				AbstractCard startCard2 = new ShadowStrike();
+				AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(startCard1, (float) (Settings.WIDTH / 2),
+						(float) (Settings.HEIGHT / 2)));
+				AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(startCard2, (float) (Settings.WIDTH / 2),
+						(float) (Settings.HEIGHT / 2)));
+				AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2),
+						(float) (Settings.HEIGHT / 2), new MiniVoidSeeker());
+				break;
+			}
+			case 2:{
+				break;
+			}
 			}
 			((HeartofProtoss) (AbstractDungeon.player.getRelic(SlaytheStarCraft2Mod.makeID("HeartofProtoss")))).seeLeaders();
 			state = State.LEAVING;
+			this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
 			this.imageEventText.clearAllDialogs();
 			this.imageEventText.setDialogOption(OPTIONS[3]);
 			AbstractDungeon.getCurrRoom().phase = RoomPhase.COMPLETE;

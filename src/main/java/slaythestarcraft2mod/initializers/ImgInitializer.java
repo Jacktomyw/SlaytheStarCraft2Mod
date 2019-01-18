@@ -27,7 +27,7 @@ public class ImgInitializer {
 
 // Card images
     //TODO add card imgs here
-    public static final String BASIC_STRIKE_PROTOSS = makeExample("cards/attack");//should be cards/basic_strike_p.png
+    public static final String BASIC_STRIKE_PROTOSS = makeExample("cards/attack");//should be cards/basic_strike.png
     public static final String BASIC_DEFEND_PROTOSS = makeExample("cards/skill");//should be...
     public static final String BATTERSLASH = makeExample("cards/attack");//should be...
     public static final String BLADECHARGE = makeExample("cards/skill");//should be...
@@ -64,11 +64,15 @@ public class ImgInitializer {
     public static final String SHIELD_POWER = makeExample("powers/Shield_power");
     public static final String TEARING_POWER = makeExample("powers/Tearing_power");
     public static final String DARKNESSAPPROACH_POWER = makeExample("powers/DarknessApproach_power");
+	public static final String GIFTSFROMXELNAGA_POWER = makeExample("powers/GiftsfromXelNaga_power");
+	public static final String ADDENERGY_POWER = makeExample("powers/AddEnergy_power");
+	public static final String WAYOFDARKTEMPLAR_POWER = makeExample("powers/WayofDarkTemplar_power");
+	
 // Relic images
     //TODO add relic imgs here
-    public static final String HeartofProtoss = makeExample("relics/HeartofProtoss");
-    public static final String HeartofProtoss_USED = makeExample("relics/HeartofProtoss");		//need to change
-    public static final String HeartofProtoss_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String HeartofProtoss = "relics/HeartofProtoss.png";
+    public static final String HeartofProtoss_USED = "relics/HeartofProtoss_used.png";
+    public static final String HeartofProtoss_OUTLINE = "relics/outline/HeartofProtoss.png";
     public static final String IanCrystal = makeExample("relics/IanCrystal");
     public static final String IanCrystal_OUTLINE = makeExample("relics/outline/ARelic");
     public static final String KeyStone = makeExample("relics/KeyStone");
@@ -89,7 +93,7 @@ public class ImgInitializer {
     
     //shoulders
     public static final String PROTOSS_SHOULDER = makeExample("char/protoss/shoulder");
-    public static final String PROTOSS_SHOULDER_AFTER = makeExample("char/protoss/shoulder_aftrer");
+    public static final String PROTOSS_SHOULDER_AFTER = makeExample("char/protoss/shoulder_after");
     //corpses
     public static final String PROTOSS_CORPSE = makeExample("char/protoss/corpse");
     

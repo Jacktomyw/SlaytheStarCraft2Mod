@@ -5,7 +5,7 @@
 	},
 	"SlaytheStarCraft2Mod:Basic_Defend_Protoss": {
 		"NAME": "防御",
-		"DESCRIPTION": "获得 !B! 点格挡。"
+		"DESCRIPTION": "获得 !B! 点 格挡 。"
 	},
 	"SlaytheStarCraft2Mod:BatterSlash":{
 		"NAME": "挥砍连击",
@@ -13,96 +13,96 @@
 	},
 	"SlaytheStarCraft2Mod:BladeCharge":{
 		"NAME": "灵刃充能",
-		"DESCRIPTION": "获得 !M! 层 灵能。"
+		"DESCRIPTION": "获得 !M! 层 灵能 。"
 	},
 	"SlaytheStarCraft2Mod:BladeofSpace":{
 		"NAME": "空间之刃",
-		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。如果造成了未被格挡的伤害，给予 3 层 撕裂。 NL 消耗。",
-		"UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。如果造成了未被格挡的伤害，给予 3 层 撕裂。"
+		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。如果造成了未被 格挡 的伤害，给予 3 层 撕裂 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。如果造成了未被 格挡 的伤害，给予 3 层 撕裂 。"
 	},
 	"SlaytheStarCraft2Mod:Blink":{
 		"NAME": "闪现",
-		"DESCRIPTION": "获得 !M! 层 护盾。"
+		"DESCRIPTION": "获得 !SlaytheStarCraft2Mod:S! 层 护盾 。"
 	},
 	"SlaytheStarCraft2Mod:DarknessApproach":{
 		"NAME": "黑暗迫袭",
-		"DESCRIPTION": "在你的回合结束时，获得 !M! 层 灵能。"
+		"DESCRIPTION": "在你的回合结束时，获得 !M! 层 灵能 。"
 	},
 	"SlaytheStarCraft2Mod:GiftsfromXelNaga":{
-		"NAME": "萨尔那加之赐",
-		"DESCRIPTION": "在你的回合开始时，获得 专注。",
-		"UPGRADE_DESCRIPTION": "在你的回合开始时，获得 专注 和 [P] 。"
+		"NAME": "萨尔纳加之赐",
+		"DESCRIPTION": "在你的回合开始时，获得 专注 。",
+		"UPGRADE_DESCRIPTION": "在你的回合开始时，获得 专注 和 [E] 。"
 	},
 	"SlaytheStarCraft2Mod:IntotheShadow":{
 		"NAME": "遁入暗影",
-		"DESCRIPTION": "获得 1 层无实体。 NL 虚无。如果你不拥有 专注， 消耗。",
-		"UPGRADE_DESCRIPTION": "获得 1 层无实体。如果你不拥有 专注， 消耗。"
+		"DESCRIPTION": "获得 1 层 无实体 。如果你不拥有 专注 ， 消耗 。 NL 虚无 。",
+		"UPGRADE_DESCRIPTION": "获得 1 层 无实体 。如果你不拥有 专注 ， 消耗 。"
 	},
 	"SlaytheStarCraft2Mod:MasterGradeWarppingBlade":{
 		"NAME": "大师级折跃灵刃",
-		"DESCRIPTION": "造成 !D! 点伤害3次，灵能的效果在这张牌上为 !M! 倍。"
+		"DESCRIPTION": "造成 !D! 点伤害 3 次， 灵能 的效果在这张牌上为 !M! 倍。"
 	},
 	"SlaytheStarCraft2Mod:Meditation":{
 		"NAME": "冥想",
-		"DESCRIPTION": "获得 !B! 点格挡。获得 专注。"
+		"DESCRIPTION": "获得 !B! 点 格挡 。获得 专注 。"
 	},
 	"SlaytheStarCraft2Mod:OblivionDescends":{
 		"NAME": "湮灭降临",
-		"DESCRIPTION": "消耗所有的灵能层数。造成相当于灵能层数 !M! 倍的伤害。",
+		"DESCRIPTION": " 消耗 所有的 灵能 层数。造成相当于 灵能 层数 !M! 倍的伤害。",
 		"UPGRADE_DESCRIPTION": "",
 		"EXTENDED_DESCRIPTION": [
-		"NL（造成 !D! 点伤害。）"
+		" NL （造成 !D! 点伤害。）"
 		]
 	},
 	"SlaytheStarCraft2Mod:PowerofNerazim":{
 		"NAME": "奈拉齐姆之力",
-		"DESCRIPTION": "打出你本回合打出过的上一张牌 X 次",
-		"UPGRADE_DESCRIPTION": "打出你本回合打出过的上一张牌 X+1 次"
+		"DESCRIPTION": "打出你本回合打出过的上一张牌 X 次，目标随机选择。",
+		"UPGRADE_DESCRIPTION": "打出你本回合打出过的上一张牌 X+1 次，目标随机选择。"
 	},
 	"SlaytheStarCraft2Mod:PsionicLightBlade":{
 		"NAME": "幽能光刃",
-		"DESCRIPTION": "造成 !D! 点伤害。如果你拥有 专注，给予 !M! 层易伤。"
+		"DESCRIPTION": "造成 !D! 点伤害。如果你拥有 专注 ，给予 !M! 层 易伤 。"
 	},
 	"SlaytheStarCraft2Mod:ShadowBarrier":{
 		"NAME": "阴影屏障",
-		"DESCRIPTION": "获得 !M! 层 护盾2次"
+		"DESCRIPTION": "获得 !SlaytheStarCraft2Mod:S! 层 护盾 2次。"
 	},
 	"SlaytheStarCraft2Mod:ShadowRush":{
 		"NAME": "暗影疾行",
-		"DESCRIPTION": "获得 !M! 层 灵能。如果你不拥有 专注，获得2层 易伤。"
+		"DESCRIPTION": "获得 !M! 层 灵能 。如果你不拥有 专注 ，获得2层 易伤 。"
 	},
-	"SlaytheStarCraft2Mod:Shadow":{
+	"SlaytheStarCraft2Mod:ShadowStrike":{
 		"NAME": "暗影打击",
-		"DESCRIPTION": "造成 !D! 点伤害。如果你拥有 专注，造成 !M! 点伤害。"
+		"DESCRIPTION": "造成 !D! 点伤害 。如果你拥有 专注 ，再造成 !SlaytheStarCraft2Mod:D2! 点伤害。"
 	},
 	"SlaytheStarCraft2Mod:SingularityStub":{
 		"NAME": "奇点钉刺",
-		"DESCRIPTION": "造成 !D! 点伤害，获得 !M! 层护盾。"
+		"DESCRIPTION": "造成 !D! 点伤害，获得 !SlaytheStarCraft2Mod:S! 层 护盾 。"
 	},
 	"SlaytheStarCraft2Mod:TearSlash":{
 		"NAME": "撕裂斩",
-		"DESCRIPTION": "造成 !D! 点伤害，如果造成了未被格挡的伤害，给予 !M! 层 撕裂。"
+		"DESCRIPTION": "造成 !D! 点伤害，如果造成了未被 格挡 的伤害，给予 !M! 层 撕裂 。"
 	},
 	"SlaytheStarCraft2Mod:TwilightDescends":{
 		"NAME": "暮光降临",
-		"DESCRIPTION": "获得 !D! 层 灵能。给予 !M! 层 虚弱。 NL 如果你拥有 专注，则改为所有敌人获得 虚弱。 NL 消耗。"
+		"DESCRIPTION": "获得 !M! 层 灵能 。给予 !SlaytheStarCraft2Mod:M2! 层 虚弱 。 NL 如果你拥有 专注 ，则改为所有敌人获得 虚弱 。 NL 消耗 。"
 	},
 	"SlaytheStarCraft2Mod:VoidImprison":{
 		"NAME": "虚空禁锢",
-		"DESCRIPTION": "击晕所有敌人。如果你不拥有 专注，消耗。 NL 虚无。",
-		"UPGRADE_DESCRIPTION": "击晕所有敌人。如果你不拥有 专注，消耗。"
+		"DESCRIPTION": " 击晕 所有敌人。如果你不拥有 专注 ， 消耗 。 NL 虚无 。",
+		"UPGRADE_DESCRIPTION": " 击晕 所有敌人。如果你不拥有 专注 ， 消耗 。"
 	},
 	"SlaytheStarCraft2Mod:VoidPowerCannon":{
 		"NAME": "虚空幽能炮",
-		"DESCRIPTION": "这张卡牌不会被灵能影响。造成 !D! 点伤害。这张卡不会在回合结束时被丢弃。"
+		"DESCRIPTION": "这张卡牌不会被 灵能 影响。造成 !D! 点伤害。 NL 保留 。"
 	},
 	"SlaytheStarCraft2Mod:VoidSneakAttack":{
 		"NAME": "虚空潜袭",
-		"DESCRIPTION": "获得 !D! 层 灵能。如果你拥有 专注，改为获得 !M! 层 灵能。"
+		"DESCRIPTION": "获得 !M! 层 灵能 。如果你拥有 专注 ，改为获得 !SlaytheStarCraft2Mod:M2! 层 灵能 。"
 	},
 	"SlaytheStarCraft2Mod:VoidSpiralBall":{
 		"NAME": "虚空螺旋球",
-		"DESCRIPTION": "这张卡牌不会被灵能影响。造成 !D! 点伤害。 NL 消耗。"
+		"DESCRIPTION": "这张卡牌不会被 灵能 影响。造成 !D! 点伤害。 NL 消耗 。"
 	},
 	"SlaytheStarCraft2Mod:VoidStrike":{
 		"NAME": "虚空打击",
@@ -110,14 +110,14 @@
 	},
 	"SlaytheStarCraft2Mod:WayofDarkTemplar":{
 		"NAME": "黑暗圣堂之路",
-		"DESCRIPTION": "在你的回合结束时，如果你这回合没有受到未被格挡的伤害，或者没有造成未被格挡的伤害，获得5点护盾，下个回合开始时获得 [P]"
+		"DESCRIPTION": "在你的回合结束时，如果你这回合没有受到未被 格挡 的伤害，或者没有造成未被 格挡 的伤害，获得5点 护盾 ，下个回合开始时获得 [E] 。"
 	},
 	"SlaytheStarCraft2Mod:Wormhole":{
 		"NAME": "虫洞",
-		"DESCRIPTION": "获得 1 层 无实体。获得 !M! 层 灵能。"
+		"DESCRIPTION": "获得 1 层 无实体 。获得 !M! 层 灵能 。 NL 消耗 。"
 	},
 	"SlaytheStarCraft2Mod:XelNagaProphecy":{
-		"NAME": "萨尔那加预言",
-		"DESCRIPTION": "抽 1 张牌，这张牌保留到下回合，在下回合获得等于其原本费用消耗的 [P] 。"
+		"NAME": "萨尔纳加预言",
+		"DESCRIPTION": "抽 1 张牌，这张牌 保留 到下回合，在下回合获得等于其原本费用 消耗 的 [E] 。"
 	}
 }

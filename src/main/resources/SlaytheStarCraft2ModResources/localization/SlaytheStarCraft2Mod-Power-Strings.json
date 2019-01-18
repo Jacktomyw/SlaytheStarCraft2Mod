@@ -26,5 +26,21 @@
 	"SlaytheStarCraft2Mod:DarknessApproachPower": {
 		"NAME": "黑暗迫袭",
 		"DESCRIPTIONS": ["在回合结束时获得","层灵能。"]
+	},
+	"SlaytheStarCraft2Mod:GiftsfromXelNagaPower": {
+		"NAME": "萨尔纳加之赐",
+		"DESCRIPTIONS": ["在每个回合开始时获得 专注。"]
+	},
+	"SlaytheStarCraft2Mod:AddEnergyPower": {
+		"NAME": "能量提升",
+		"DESCRIPTIONS": ["在每个回合开始时，获得",
+		"。"]
+	},
+	"SlaytheStarCraft2Mod:WayofDarkTemplarPower":{
+		"NAME": "黑暗圣堂之路",
+		"DESCRIPTIONS":["在你的回合开始时，如果你上回合没有受到未被格挡或被护盾抵消的伤害，或者没有造成未被格挡的伤害，获得 ",
+		" 点护盾，下个回合开始时获得 ",
+		"。"
+		]
 	}
 }

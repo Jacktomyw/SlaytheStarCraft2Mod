@@ -38,6 +38,7 @@ public class StringInitializer {
         // EventStrings
         BaseMod.loadCustomStringsFile(EventStrings.class, 
         		"SlaytheStarCraft2ModResources/localization/SlaytheStarCraft2Mod-Event-Strings.json");
+
         logger.info("Done edittting strings");
 	}
 }

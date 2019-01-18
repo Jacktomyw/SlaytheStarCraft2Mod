@@ -11,11 +11,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.EventStrings;
-import com.megacrit.cardcrawl.localization.PotionStrings;
-import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.map.MapRoomNode;
 import com.megacrit.cardcrawl.rooms.EventRoom;
 import basemod.BaseMod;
@@ -32,7 +27,7 @@ import slaythestarcraft2mod.patches.*;
 
 @SpireInitializer
 public class SlaytheStarCraft2Mod implements EditCharactersSubscriber, EditCardsSubscriber, EditStringsSubscriber,
-		EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber{
+		EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber {
 	
 	public static final Logger logger = LogManager.getLogger(SlaytheStarCraft2Mod.class.getName());
 

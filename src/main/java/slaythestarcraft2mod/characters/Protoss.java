@@ -2,9 +2,6 @@ package slaythestarcraft2mod.characters;
 
 import java.util.ArrayList;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -22,7 +19,6 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
-import slaythestarcraft2mod.SlaytheStarCraft2Mod;
 import slaythestarcraft2mod.cards.protoss.Basic_Defend_Protoss;
 import slaythestarcraft2mod.cards.protoss.Basic_Strike_Protoss;
 import slaythestarcraft2mod.initializers.ImgInitializer;
@@ -30,7 +26,6 @@ import slaythestarcraft2mod.patches.AbstractCardEnum;
 import slaythestarcraft2mod.relics.HeartofProtoss;
 
 public class Protoss extends CustomPlayer{
-	public static final Logger logger = LogManager.getLogger(SlaytheStarCraft2Mod.class.getName());
 	
 	public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 75;
@@ -58,8 +53,8 @@ public class Protoss extends CustomPlayer{
     	
     	
     	initializeClass(null,
-    			ImgInitializer.makePath(ImgInitializer.PROTOSS_SHOULDER),
     			ImgInitializer.makePath(ImgInitializer.PROTOSS_SHOULDER_AFTER),
+    			ImgInitializer.makePath(ImgInitializer.PROTOSS_SHOULDER),
     			ImgInitializer.makePath(ImgInitializer.PROTOSS_CORPSE),
     			getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
     	

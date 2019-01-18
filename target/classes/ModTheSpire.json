@@ -3,7 +3,7 @@
   "name": "Slay the StarCraft II Mod",
   "author_list": ["Jacktomyw"],
   "description": "This is a mod for STS in a STARCRAFT II theme.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "sts_version": "01-10-2019",
   "mts_version": "3.7.5",
   "dependencies": ["basemod","stslib"]

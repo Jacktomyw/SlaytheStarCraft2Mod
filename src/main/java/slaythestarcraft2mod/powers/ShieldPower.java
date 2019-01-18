@@ -1,8 +1,5 @@
 package slaythestarcraft2mod.powers;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -12,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import slaythestarcraft2mod.SlaytheStarCraft2Mod;
 import slaythestarcraft2mod.initializers.ImgInitializer;
 
 public class ShieldPower extends AbstractPower {
@@ -22,11 +18,9 @@ public class ShieldPower extends AbstractPower {
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 	public static final String IMG = ImgInitializer.makePath(ImgInitializer.SHIELD_POWER);
-	public static final Logger logger = LogManager.getLogger(SlaytheStarCraft2Mod.class.getName());
 	public ShieldPower(AbstractCreature owner, int amount){
 		this.name = NAME;
 		this.ID = POWER_ID;
-		logger.info(this.ID);
 		this.owner = owner;
 		this.amount = amount;
 		if (this.amount >= 999) {
@@ -45,6 +39,7 @@ public class ShieldPower extends AbstractPower {
 
 	@Override
 	public int onLoseHp(int damageAmount) {
+		this.flash();
 		if (damageAmount < this.amount) {
 			AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this.ID, damageAmount));
 			return 0;
