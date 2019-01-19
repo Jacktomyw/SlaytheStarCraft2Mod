@@ -4,9 +4,9 @@ This is a mod for Slay the Spire in a STARCRAFT II theme.
 
 This mod is still under construction!
 
-Welcome to version 0.1.2!
+Welcome to version 0.1.4!
 
-这个版本中，基本实现了游戏可游玩
+这个版本基本实现了游戏可游玩
 
 1个新角色（星灵）
 
@@ -14,11 +14,9 @@ Welcome to version 0.1.2!
 
 1个特殊事件（必定在星灵第一层触发，目前只有第二个选项有用）
 
-2个新遗物（都和上面这个特殊事件有关）
+6个新遗物
 
 图片由于缺少美工只做了一些简单的处理……
-
-(This version still contains potential bugs.)
 
 已知bug：
 

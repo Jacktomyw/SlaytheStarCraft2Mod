@@ -40,13 +40,11 @@ public class ProtossLeaders extends AbstractImageEvent {
 		state = State.ENTERING;
 		
 		if(!AbstractDungeon.player.hasRelic(SlaytheStarCraft2Mod.makeID("HeartofProtoss"))){
-			//this should not happen
 			this.body = DESCRIPTIONS[2];
 			state = State.LEAVING;
 		}else {
 			if(AbstractDungeon.player.getRelic(SlaytheStarCraft2Mod.makeID("HeartofProtoss")).usedUp) {
-				//this should not happen too
-				this.body = DESCRIPTIONS[2];
+				this.body = DESCRIPTIONS[3];
 				state = State.LEAVING;
 			}
 		}

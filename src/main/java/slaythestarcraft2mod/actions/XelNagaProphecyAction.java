@@ -19,9 +19,13 @@ public class XelNagaProphecyAction extends AbstractGameAction {
 			this.isDone = true;
 		} else {
 			AbstractCard card = AbstractDungeon.player.drawPile.getTopCard();
+			int cost = card.cost;
+			if(card.cost<0) {
+				cost = 0;
+			}
 			if(!card.isEthereal)
 				card.retain = true;
-			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergizedPower(AbstractDungeon.player, card.cost), card.cost));
+			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergizedPower(AbstractDungeon.player, cost), cost));
 			this.isDone = true;
 		}
 

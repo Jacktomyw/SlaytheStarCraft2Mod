@@ -1,6 +1,7 @@
 package slaythestarcraft2mod.powers;
 
 import slaythestarcraft2mod.patches.*;
+import slaythestarcraft2mod.relics.KeyStone;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -46,17 +47,33 @@ public class PsionicPower extends AbstractPower {
 	
 	@Override
 	public void onUseCard(AbstractCard card, UseCardAction action) {
-		boolean isUsed = false;
-		if(card.type == CardType.ATTACK && !card.hasTag(CardTagsEnum.NOPSIONIC)){
-			isUsed = true;
+//		boolean isUsed = false;
+//		if(card.type == CardType.ATTACK && !card.hasTag(CardTagsEnum.NOPSIONIC)){
+//			isUsed = true;
+//		}
+//		if(card.hasTag(CardTagsEnum.SHIELD)) {
+//			isUsed = true;
+//		}
+		
+		if(!card.hasTag(CardTagsEnum.NOPSIONIC)) {
+			if(card.type == CardType.ATTACK || card.hasTag(CardTagsEnum.SHIELD)) {
+				if(AbstractDungeon.player.hasRelic(SlaytheStarCraft2Mod.makeID("KeyStone"))) {
+					if(((KeyStone)AbstractDungeon.player.getRelic(SlaytheStarCraft2Mod.makeID("KeyStone"))).isFirstCard) {
+						SlaytheStarCraft2Mod.logger.info("KeyStone activated");
+						((KeyStone)AbstractDungeon.player.getRelic(SlaytheStarCraft2Mod.makeID("KeyStone"))).protectPsionic();
+						SlaytheStarCraft2Mod.logger.info("KeyStone used this turn");
+						return;
+					}
+				}
+				this.flash();
+				AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this.ID));
+			}
 		}
-		if(card.hasTag(CardTagsEnum.SHIELD)) {
-			isUsed = true;
-		}
-		if(isUsed) {
-			this.flash();
-			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this.ID));
-		}
+//		if(isUsed) {
+//			this.flash();
+//			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this.ID));
+//		}
+		
 	}
 
 	@Override

@@ -35,6 +35,7 @@ public class PowerofNerazim extends CustomCard{
 	
 	public PowerofNerazim() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+		this.exhaust = true;
 	}
 	
 	@Override

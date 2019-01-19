@@ -25,7 +25,7 @@ public class MiniVoidSeeker extends CustomRelic {
 	private boolean notReceiveDamageLastTurn = true;
 	
     public MiniVoidSeeker() {
-        super(ID, new Texture(IMG), new Texture(OUTLINE), RelicTier.SPECIAL, LandingSound.MAGICAL);
+        super(ID, new Texture(IMG), new Texture(OUTLINE), RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
 	public String getUpdatedDescription() {
@@ -62,6 +62,7 @@ public class MiniVoidSeeker extends CustomRelic {
     				return damageAmount;
     		}
 			notReceiveDamageLastTurn = false;
+			this.stopPulse();
 		}
 		return damageAmount;
 	}
@@ -85,5 +86,6 @@ public class MiniVoidSeeker extends CustomRelic {
 		firstTurn=false;
 		notReceiveDamageLastTurn=true;
 		notDealDamageLastTurn=true;
+		this.beginPulse();
 	}
 }

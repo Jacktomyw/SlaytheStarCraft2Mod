@@ -56,8 +56,8 @@
 	},
 	"SlaytheStarCraft2Mod:PowerofNerazim":{
 		"NAME": "奈拉齐姆之力",
-		"DESCRIPTION": "打出你本回合打出过的上一张牌 X 次，目标随机选择。",
-		"UPGRADE_DESCRIPTION": "打出你本回合打出过的上一张牌 X+1 次，目标随机选择。"
+		"DESCRIPTION": "打出你本回合打出过的上一张牌 X 次，目标随机选择。 消耗 。",
+		"UPGRADE_DESCRIPTION": "打出你本回合打出过的上一张牌 X+1 次，目标随机选择。 消耗 。"
 	},
 	"SlaytheStarCraft2Mod:PsionicLightBlade":{
 		"NAME": "幽能光刃",
