@@ -41,11 +41,11 @@ public class ShieldPower extends AbstractPower {
 	public int onLoseHp(int damageAmount) {
 		this.flash();
 		if (damageAmount < this.amount) {
-			AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this.ID, damageAmount));
+			AbstractDungeon.actionManager.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, damageAmount));
 			return 0;
 		}else {
 			damageAmount -= this.amount;
-			AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+			AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
 			return damageAmount;
 		}
 	}

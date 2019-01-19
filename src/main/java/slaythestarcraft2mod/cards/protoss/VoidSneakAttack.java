@@ -44,7 +44,7 @@ public class VoidSneakAttack extends MultipleBasicValueAndShieldCustomCard{
 	
 	@Override
 	public void use(AbstractPlayer p,AbstractMonster m) {
-		if(p.hasPower(SlaytheStarCraft2Mod.makeID("Concentrated"))) {
+		if(p.hasPower(SlaytheStarCraft2Mod.makeID("ConcentratedPower"))) {
 			p.getPower(SlaytheStarCraft2Mod.makeID("ConcentratedPower")).flash();
 			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PsionicPower(p, this.magicNumber2), this.magicNumber2));
 		}else {

@@ -52,7 +52,7 @@ public class VoidSpiralBall extends CustomCard{
 	@Override
 	public void use(AbstractPlayer p,AbstractMonster m) {
 		AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DamageAction(m, new DamageInfo(p,this.damage,this.damageTypeForTurn),
-				AbstractGameAction.AttackEffect.SMASH));
+				AbstractGameAction.AttackEffect.SLASH_HEAVY));
 	}
 	
 	@Override

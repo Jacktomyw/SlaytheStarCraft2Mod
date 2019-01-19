@@ -40,7 +40,7 @@ public class VoidImprison extends CustomCard{
 	
 	@Override
 	public void use(AbstractPlayer p,AbstractMonster m) {
-		if(p.hasPower(SlaytheStarCraft2Mod.makeID("Concentrated"))) {
+		if(p.hasPower(SlaytheStarCraft2Mod.makeID("ConcentratedPower"))) {
 			p.getPower(SlaytheStarCraft2Mod.makeID("ConcentratedPower")).flash();
 			this.exhaust = false;
 		}

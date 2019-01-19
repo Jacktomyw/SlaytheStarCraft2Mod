@@ -39,12 +39,23 @@ public class PowerofNerazim extends CustomCard{
 	
 	@Override
 	public void use(AbstractPlayer p,AbstractMonster m) {
-		if (this.energyOnUse < EnergyPanel.totalCount) {
-            this.energyOnUse = EnergyPanel.totalCount;
-        }
+		int effect = EnergyPanel.totalCount;
 
-		AbstractDungeon.actionManager
-				.addToBottom(new PowerofNerazimAction(p, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
+		if (p.hasRelic("Chemical X")) {
+			effect += 2;
+			p.getRelic("Chemical X").flash();
+		}
+
+		if (this.upgraded) {
+			++effect;
+		}
+		if(effect>0) {
+			AbstractDungeon.actionManager.addToBottom(
+					new PowerofNerazimAction(effect));
+		}
+		if (!this.freeToPlayOnce) {
+		      p.energy.use(EnergyPanel.totalCount);
+	    }
 	}
 	
 	@Override
