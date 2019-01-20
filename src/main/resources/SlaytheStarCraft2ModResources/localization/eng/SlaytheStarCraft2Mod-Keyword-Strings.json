@@ -1,0 +1,39 @@
+{
+  "keywords": [
+    {
+      "NAMES": [
+        "Psionic",
+        "psionic"
+      ],
+      "DESCRIPTION": "Psionic will increase the amount of next card which deals damage to enemy or gives you Shield. Psionic won't be removed at the end of turn."
+    },
+    {
+      "NAMES": [
+        "Torn",
+        "torn"
+      ],
+      "DESCRIPTION": "Torn creature will receive damage after the creature acts."
+    },
+    {
+      "NAMES": [
+        "Shield",
+        "shield"
+      ],
+      "DESCRIPTION": "Shield can defend damage. Shield won't be removed at the end of turn."
+    },
+    {
+      "NAMES": [
+        "Concentrated",
+        "concentrated"
+      ],
+      "DESCRIPTION": "If you have Concentrated power, this card will "
+    },
+    {
+      "NAMES": [
+        "Stun",
+        "stun"
+      ],
+      "DESCRIPTION": "Enemies being stunned will not act in its next turn."
+    }
+  ]
+}

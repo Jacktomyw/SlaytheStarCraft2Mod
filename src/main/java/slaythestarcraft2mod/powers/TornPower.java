@@ -14,14 +14,14 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
 
 import slaythestarcraft2mod.initializers.ImgInitializer;
 
-public class TearingPower extends AbstractPower{
-	public static final String POWER_ID = slaythestarcraft2mod.SlaytheStarCraft2Mod.makeID("TearingPower");
+public class TornPower extends AbstractPower{
+	public static final String POWER_ID = slaythestarcraft2mod.SlaytheStarCraft2Mod.makeID("TornPower");
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-	public static final String IMG = ImgInitializer.makePath(ImgInitializer.TEARING_POWER);
+	public static final String IMG = ImgInitializer.makePath(ImgInitializer.TORN_POWER);
 	
-	public TearingPower(AbstractCreature owner, int amount) {
+	public TornPower(AbstractCreature owner, int amount) {
 		this.name = NAME;
 		this.ID = POWER_ID;
 		this.owner = owner;

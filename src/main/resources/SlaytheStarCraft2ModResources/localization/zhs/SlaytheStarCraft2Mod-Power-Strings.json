@@ -7,7 +7,7 @@
         "NAME": "专注",
         "DESCRIPTIONS": ["拥有专注关键词的牌将产生额外效果。"]
 	},
-	"SlaytheStarCraft2Mod:TearingPower": {
+	"SlaytheStarCraft2Mod:TornPower": {
         "NAME": "撕裂",
         "DESCRIPTIONS": ["每回合结束时受到","点伤害。"]
 	},

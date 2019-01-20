@@ -31,7 +31,7 @@ public class VoidImprison extends CustomCard{
 	private static final CardType TYPE = CardType.SKILL;
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
-	private static final int COST = 3;
+	private static final int COST = 4;
 	
 	public VoidImprison() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

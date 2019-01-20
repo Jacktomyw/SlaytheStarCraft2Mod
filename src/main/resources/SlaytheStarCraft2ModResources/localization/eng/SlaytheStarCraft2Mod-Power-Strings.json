@@ -1,0 +1,46 @@
+{
+	"SlaytheStarCraft2Mod:DoubleBladePower": {
+        "NAME": "Double Blade",
+        "DESCRIPTIONS": ["You have played ATTACK card this turn."]
+	},
+	"SlaytheStarCraft2Mod:ConcentratedPower": {
+        "NAME": "Concentrated",
+        "DESCRIPTIONS": ["The card with Concentrated will produces additional effects."]
+	},
+	"SlaytheStarCraft2Mod:TornPower": {
+        "NAME": "Torn",
+        "DESCRIPTIONS": ["Receive","damage at after acting."]
+	},
+	"SlaytheStarCraft2Mod:PsionicPower": {
+        "NAME": "Psionic",
+        "DESCRIPTIONS": ["The amount of next card dealing damage or gaining Shield will be increased by "," ."]
+	},
+	"SlaytheStarCraft2Mod:ShieldPower": {
+        "NAME": "Shield",
+        "DESCRIPTIONS": ["Your shield can counteract "," damage."]
+	},
+	"SlaytheStarCraft2Mod:ParryPower": {
+        "NAME": "Parry",
+        "DESCRIPTIONS": ["You have played SKILL card this turn."]
+	},
+	"SlaytheStarCraft2Mod:DarknessApproachPower": {
+		"NAME": "Darkness Approach",
+		"DESCRIPTIONS": ["Gain "," Psionic at the end of your turn."]
+	},
+	"SlaytheStarCraft2Mod:GiftsfromXelNagaPower": {
+		"NAME": "Gifts from Xel'Naga",
+		"DESCRIPTIONS": ["Gain Concentrated at the start of your turn."]
+	},
+	"SlaytheStarCraft2Mod:AddEnergyPower": {
+		"NAME": "Power up",
+		"DESCRIPTIONS": ["Gain ",
+		" at the start of your turn."]
+	},
+	"SlaytheStarCraft2Mod:WayofDarkTemplarPower":{
+		"NAME": "Way of Dark Templar",
+		"DESCRIPTIONS":["At the start of your turn, if you do not receive damage that not be Blocked or defended by Shield last turn, or you do not give damage that not be Blocked last turn, gain ",
+		" Shield and ",
+		" ."
+		]
+	}
+}

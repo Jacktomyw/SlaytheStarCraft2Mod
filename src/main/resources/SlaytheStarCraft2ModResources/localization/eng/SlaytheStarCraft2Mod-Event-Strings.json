@@ -1,0 +1,18 @@
+{
+	"SlaytheStarCraft2Mod:ProtossLeaders" :{
+		"NAME": "Protoss Leaders",
+		"DESCRIPTIONS": ["Select one of the leaders:",
+		"OK, now take your own way forward.",
+		"Mortal, this is not the place you should come. Go back.",
+		"You have obtained this power already."],
+		"OPTIONS":[
+		"Artanis(this option is not useful by now--by developer)",
+		"Zeratul",
+		"Alarak(this option is not useful by now--by developer)",
+		"[Leave]"
+		]
+	
+	}
+
+
+}

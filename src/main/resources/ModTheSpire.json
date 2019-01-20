@@ -2,8 +2,9 @@
   "modid": "slaythestarcraft2mod",
   "name": "Slay the StarCraft II Mod",
   "author_list": ["Jacktomyw"],
-  "description": "这个mod是以星际争霸2为主题的，添加了一个可用的新角色以及相关物品。",
-  "version": "0.1.4",
+  "credits":"NorthBlizzard",
+  "description": "这个mod是以星际争霸2为主题的，到目前为止已经添加了一个可用的新角色以及相关物品。This mod is a Slay the Spire mod in STARCRAFT II theme. For now there's a new character and items related available.",
+  "version": "0.1.5",
   "sts_version": "01-10-2019",
   "mts_version": "3.7.5",
   "dependencies": ["basemod","stslib"]

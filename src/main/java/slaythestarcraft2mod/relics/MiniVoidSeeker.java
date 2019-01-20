@@ -35,7 +35,7 @@ public class MiniVoidSeeker extends CustomRelic {
 	}
 	
     private String setDescription(PlayerClass c) {
-		return this.DESCRIPTIONS[0] + this.DESCRIPTIONS[1];
+		return this.DESCRIPTIONS[0];
 	}
 
 	public void updateDescription(PlayerClass c) {

@@ -62,7 +62,7 @@ public class ImgInitializer {
     public static final String DOUBLE_BLADE_POWER = makeExample("powers/DoubleBlade_power");
     public static final String PSIONIC_POWER = makeExample("powers/Psionic_power");
     public static final String SHIELD_POWER = makeExample("powers/Shield_power");
-    public static final String TEARING_POWER = makeExample("powers/Tearing_power");
+    public static final String TORN_POWER = makeExample("powers/Torn_power");
     public static final String DARKNESSAPPROACH_POWER = makeExample("powers/DarknessApproach_power");
 	public static final String GIFTSFROMXELNAGA_POWER = makeExample("powers/GiftsfromXelNaga_power");
 	public static final String ADDENERGY_POWER = makeExample("powers/AddEnergy_power");

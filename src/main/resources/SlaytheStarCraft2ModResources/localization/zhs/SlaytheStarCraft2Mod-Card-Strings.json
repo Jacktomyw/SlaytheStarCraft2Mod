@@ -48,7 +48,7 @@
 	},
 	"SlaytheStarCraft2Mod:OblivionDescends":{
 		"NAME": "湮灭降临",
-		"DESCRIPTION": " 消耗 所有的 灵能 层数。造成相当于 灵能 层数 !M! 倍的伤害。",
+		"DESCRIPTION": "消耗所有的 灵能 层数。造成相当于 灵能 层数 !M! 倍的伤害。",
 		"UPGRADE_DESCRIPTION": "",
 		"EXTENDED_DESCRIPTION": [
 		" NL （造成 !D! 点伤害。）"
@@ -110,7 +110,7 @@
 	},
 	"SlaytheStarCraft2Mod:WayofDarkTemplar":{
 		"NAME": "黑暗圣堂之路",
-		"DESCRIPTION": "在你的回合结束时，如果你这回合没有受到未被 格挡 的伤害，或者没有造成未被 格挡 的伤害，获得5点 护盾 ，下个回合开始时获得 [E] 。"
+		"DESCRIPTION": "在你的回合开始时，如果你上回合没有受到未被 格挡 或被 护盾 抵消的伤害，或者没有造成未被 格挡 的伤害，获得 5 点 护盾 ，下个回合开始时获得 [E] 。"
 	},
 	"SlaytheStarCraft2Mod:Wormhole":{
 		"NAME": "虫洞",
@@ -118,6 +118,6 @@
 	},
 	"SlaytheStarCraft2Mod:XelNagaProphecy":{
 		"NAME": "萨尔纳加预言",
-		"DESCRIPTION": "抽 1 张牌，这张牌 保留 到下回合，在下回合获得等于其原本费用 消耗 的 [E] 。"
+		"DESCRIPTION": "抽 1 张牌，这张牌 保留 到下回合，在下回合获得等于其原本费用的 [E] 。"
 	}
 }

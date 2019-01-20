@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.Gdx;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.Keyword;
 
 import basemod.BaseMod;
@@ -14,6 +15,8 @@ import basemod.BaseMod;
 public class KeywordInitializer {
 
 	public static final Logger logger = LogManager.getLogger(KeywordInitializer.class.getName());
+
+	private static String localizationPath = "SlaytheStarCraft2ModResources/localization/";
 	
 	public static void addKeywords() {
 		logger.info("Begin editting keywords");
@@ -22,7 +25,21 @@ public class KeywordInitializer {
 //        BaseMod.addKeyword(placeholder, "Whenever you play a card, gain 1 dexterity this turn only.");
 		Gson gson = new Gson();
 	    Keywords keywords;
-	    keywords = gson.fromJson(loadJson("SlaytheStarCraft2ModResources/localization/SlaytheStarCraft2Mod-Keyword-Strings.json"), Keywords.class);
+	    switch(Settings.language) {
+		case ZHS:{
+			localizationPath += "zhs/";
+			break;
+		}
+		case ENG:{
+			localizationPath += "eng/";
+			break;
+		}
+		default:{
+			localizationPath += "eng/";
+			break;
+		}
+		}
+	    keywords = gson.fromJson(loadJson(localizationPath + "SlaytheStarCraft2Mod-Keyword-Strings.json"), Keywords.class);
 	    for (Keyword key : keywords.keywords) {
 	      logger.info("Loading keyword : " + key.NAMES[0]);
 	      BaseMod.addKeyword(key.NAMES, key.DESCRIPTION);

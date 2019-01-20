@@ -1,0 +1,123 @@
+{
+	"SlaytheStarCraft2Mod:Basic_Strike_Protoss": {
+		"NAME": "Strike",
+		"DESCRIPTION": "Deal !D! damage."
+	},
+	"SlaytheStarCraft2Mod:Basic_Defend_Protoss": {
+		"NAME": "Defend",
+		"DESCRIPTION": "Gain !B! Blocks ."
+	},
+	"SlaytheStarCraft2Mod:BatterSlash":{
+		"NAME": "Batter Slash",
+		"DESCRIPTION": "Deal !D! damage !M! times."
+	},
+	"SlaytheStarCraft2Mod:BladeCharge":{
+		"NAME": "Blade Charge",
+		"DESCRIPTION": "gain !M! Psionic ."
+	},
+	"SlaytheStarCraft2Mod:BladeofSpace":{
+		"NAME": "Blade of Space",
+		"DESCRIPTION": "Deal 1 damage to all enemies. If this damage is not completely Blocked , give 3 Torn. NL Exhaust .",
+		"UPGRADE_DESCRIPTION": "Deal 1 damage to all enemies. If this damage is not completely Blocked , give 3 Torn."
+	},
+	"SlaytheStarCraft2Mod:Blink":{
+		"NAME": "Blink",
+		"DESCRIPTION": "Gain !SlaytheStarCraft2Mod:S! Shield ."
+	},
+	"SlaytheStarCraft2Mod:DarknessApproach":{
+		"NAME": "Darkness Approach",
+		"DESCRIPTION": "At the end of your turn, gain !M! Psionic ."
+	},
+	"SlaytheStarCraft2Mod:GiftsfromXelNaga":{
+		"NAME": "Gifts from Xel'Naga",
+		"DESCRIPTION": "At the start of each turn, gain Concentrated .",
+		"UPGRADE_DESCRIPTION": "At the start of each turn, gain Concentrated and [E] ."
+	},
+	"SlaytheStarCraft2Mod:IntotheShadow":{
+		"NAME": "Into the Shadow",
+		"DESCRIPTION": "Gain 1 intangible .If you do NOT have Concentrated , Exhaust . NL Ethereal .",
+		"UPGRADE_DESCRIPTION": "Gain 1 intangible .If you do NOT have Concentrated , Exhaust ."
+	},
+	"SlaytheStarCraft2Mod:MasterGradeWarppingBlade":{
+		"NAME": "MasterGrade Warpping Blade",
+		"DESCRIPTION": "Deal !D! damage 3 times, Psionic counts !M! times on this card."
+	},
+	"SlaytheStarCraft2Mod:Meditation":{
+		"NAME": "Meditation",
+		"DESCRIPTION": "Gain !B! Blocks .Gain Concentrated ."
+	},
+	"SlaytheStarCraft2Mod:OblivionDescends":{
+		"NAME": "Oblivion Descends",
+		"DESCRIPTION": " Consume all of your Psionic .Deal damage that equals to !M! times of that amount.",
+		"UPGRADE_DESCRIPTION": "",
+		"EXTENDED_DESCRIPTION": [
+		" NL (Deal !D! damage.)"
+		]
+	},
+	"SlaytheStarCraft2Mod:PowerofNerazim":{
+		"NAME": "Power of Nerazim",
+		"DESCRIPTION": "Use the last card you used this turn X times, to random targets. Exhaust .",
+		"UPGRADE_DESCRIPTION": "Use the last card you used this turn X+1 times, to random targets. Exhaust ."
+	},
+	"SlaytheStarCraft2Mod:PsionicLightBlade":{
+		"NAME": "Psionic Light Blade",
+		"DESCRIPTION": "Deal !D! damage. If you have Concentrated ,give !M! Vulnerable ."
+	},
+	"SlaytheStarCraft2Mod:ShadowBarrier":{
+		"NAME": "Shadow Barrier",
+		"DESCRIPTION": "Gain !SlaytheStarCraft2Mod:S! Shield 2 times."
+	},
+	"SlaytheStarCraft2Mod:ShadowRush":{
+		"NAME": "Shadow Rush",
+		"DESCRIPTION": "Gain !M! Psionic . If you do NOT have Concentrated ,gain 2 Vulnerable ."
+	},
+	"SlaytheStarCraft2Mod:ShadowStrike":{
+		"NAME": "Shadow Strike",
+		"DESCRIPTION": "Deal !D! damage . If you have Concentrated ,Deal !SlaytheStarCraft2Mod:D2! damage again."
+	},
+	"SlaytheStarCraft2Mod:SingularityStub":{
+		"NAME": "Singularity Stub",
+		"DESCRIPTION": "Deal !D! damage, gain !SlaytheStarCraft2Mod:S! Shield ."
+	},
+	"SlaytheStarCraft2Mod:TearSlash":{
+		"NAME": "Tear Slash",
+		"DESCRIPTION": "Deal !D! damage. If this damage is not completely blocked, give !M! Torn."
+	},
+	"SlaytheStarCraft2Mod:TwilightDescends":{
+		"NAME": "Twilight Descends",
+		"DESCRIPTION": "Gain !M! Psionic . Give !SlaytheStarCraft2Mod:M2! Weak . NL If you have Concentrated , give all enemies Weak instead. NL Exhaust ."
+	},
+	"SlaytheStarCraft2Mod:VoidImprison":{
+		"NAME": "Void Imprison",
+		"DESCRIPTION": " Stun all enemies. If you do NOT have Concentrated , Exhaust . NL Ethereal .",
+		"UPGRADE_DESCRIPTION": " Stun all enemies. If you do NOT have Concentrated , Exhaust ."
+	},
+	"SlaytheStarCraft2Mod:VoidPowerCannon":{
+		"NAME": "Void Power Cannon",
+		"DESCRIPTION": " Psionic do NOT count on this card. Deal !D! damage. NL Retain ."
+	},
+	"SlaytheStarCraft2Mod:VoidSneakAttack":{
+		"NAME": "Void Sneak Attack",
+		"DESCRIPTION": "Gain !M! Psionic . If you have Concentrated , gain !SlaytheStarCraft2Mod:M2! Psionic instead."
+	},
+	"SlaytheStarCraft2Mod:VoidSpiralBall":{
+		"NAME": "Void Spiral Ball",
+		"DESCRIPTION": " Psionic do NOT count on this card. Deal !D! damage. NL Exhaust ."
+	},
+	"SlaytheStarCraft2Mod:VoidStrike":{
+		"NAME": "Void Strike",
+		"DESCRIPTION": "Deal !D! damage !M! times."
+	},
+	"SlaytheStarCraft2Mod:WayofDarkTemplar":{
+		"NAME": "Way of Dark Templar",
+		"DESCRIPTION": "At the start of your turn, if you do not receive damage that not be Blocked or defended by Shield last turn, or you do not give damage that not be Blocked last turn, gain 5 Shield and [E] ."
+	},
+	"SlaytheStarCraft2Mod:Wormhole":{
+		"NAME": "Wormhole",
+		"DESCRIPTION": "Gain 1 intangible . Gain !M! Psionic . NL Exhaust ."
+	},
+	"SlaytheStarCraft2Mod:XelNagaProphecy":{
+		"NAME": "Xel'Naga Prophecy",
+		"DESCRIPTION": "Draw 1 card. This card get Retain until next turn. Gain [E] which equals to the cost of this card next turn."
+	}
+}

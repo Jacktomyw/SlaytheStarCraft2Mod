@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
-import slaythestarcraft2mod.powers.TearingPower;
+import slaythestarcraft2mod.powers.TornPower;
 
 public class TearingAction extends AbstractGameAction{
 	
@@ -42,7 +42,7 @@ public class TearingAction extends AbstractGameAction{
 
 
 			if (!(((AbstractMonster) this.target).isDying) && mon.currentHealth < tmp) {
-		        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mon, source, new TearingPower(mon, stack), stack));
+		        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mon, source, new TornPower(mon, stack), stack));
 			}
 
 			if (AbstractDungeon.getCurrRoom().monsters.areMonstersBasicallyDead()) {
