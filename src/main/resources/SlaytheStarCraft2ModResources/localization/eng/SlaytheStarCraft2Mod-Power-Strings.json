@@ -31,8 +31,8 @@
 		"NAME": "Gifts from Xel'Naga",
 		"DESCRIPTIONS": ["Gain Concentrated at the start of your turn."]
 	},
-	"SlaytheStarCraft2Mod:AddEnergyPower": {
-		"NAME": "Power up",
+	"SlaytheStarCraft2Mod:PylonPower": {
+		"NAME": "Pylon",
 		"DESCRIPTIONS": ["Gain ",
 		" at the start of your turn."]
 	},

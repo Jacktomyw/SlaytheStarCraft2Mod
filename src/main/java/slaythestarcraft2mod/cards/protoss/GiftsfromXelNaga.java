@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import basemod.abstracts.CustomCard;
 import slaythestarcraft2mod.SlaytheStarCraft2Mod;
 import slaythestarcraft2mod.patches.AbstractCardEnum;
-import slaythestarcraft2mod.powers.AddEnergyPower;
+import slaythestarcraft2mod.powers.PylonPower;
 import slaythestarcraft2mod.powers.GiftsfromXelNagaPower;
 import slaythestarcraft2mod.initializers.ImgInitializer;
 
@@ -42,7 +42,7 @@ public class GiftsfromXelNaga extends CustomCard{
 	public void use(AbstractPlayer p,AbstractMonster m) {
 		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new GiftsfromXelNagaPower(p)));
 		if(this.upgraded) {
-			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new AddEnergyPower(p, 1),1));
+			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PylonPower(p, 1),1));
 		}
 	}
 	

@@ -31,8 +31,8 @@
 		"NAME": "萨尔纳加之赐",
 		"DESCRIPTIONS": ["在每个回合开始时获得 专注。"]
 	},
-	"SlaytheStarCraft2Mod:AddEnergyPower": {
-		"NAME": "能量提升",
+	"SlaytheStarCraft2Mod:PylonPower": {
+		"NAME": "水晶塔超载",
 		"DESCRIPTIONS": ["在每个回合开始时，获得",
 		"。"]
 	},

@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import slaythestarcraft2mod.SlaytheStarCraft2Mod;
 import slaythestarcraft2mod.cards.protoss.BladeCharge;
 import slaythestarcraft2mod.cards.protoss.ShadowStrike;
+import slaythestarcraft2mod.characters.Protoss;
 import slaythestarcraft2mod.initializers.ImgInitializer;
 import slaythestarcraft2mod.relics.HeartofProtoss;
 import slaythestarcraft2mod.relics.MiniVoidSeeker;
@@ -24,6 +25,7 @@ public class ProtossLeaders extends AbstractImageEvent {
 	private static final String[] OPTIONS = eventStrings.OPTIONS;
 	private static final String NAME = eventStrings.NAME;
 	private static final String IMG = ImgInitializer.makePath(ImgInitializer.ProtossLeaders_IMG);
+	private final Protoss p = (Protoss) AbstractDungeon.player;
 	
 	private State state;
 	
@@ -61,6 +63,7 @@ public class ProtossLeaders extends AbstractImageEvent {
 		case ENTERING: {
 			switch(button) {
 			case 0:{
+				p.SELECTED_LEADER = 1;
 				break;
 			}
 			case 1:{
@@ -72,9 +75,11 @@ public class ProtossLeaders extends AbstractImageEvent {
 						(float) (Settings.HEIGHT / 2)));
 				AbstractDungeon.getCurrRoom().spawnRelicAndObtain((float) (Settings.WIDTH / 2),
 						(float) (Settings.HEIGHT / 2), new MiniVoidSeeker());
+				p.SELECTED_LEADER = 2;
 				break;
 			}
 			case 2:{
+				p.SELECTED_LEADER = 3;
 				break;
 			}
 			}

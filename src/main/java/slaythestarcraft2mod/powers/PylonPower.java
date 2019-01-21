@@ -9,14 +9,14 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import slaythestarcraft2mod.initializers.ImgInitializer;
 
-public class AddEnergyPower extends AbstractPower {
-	public static final String POWER_ID = slaythestarcraft2mod.SlaytheStarCraft2Mod.makeID("AddEnergyPower");
+public class PylonPower extends AbstractPower {
+	public static final String POWER_ID = slaythestarcraft2mod.SlaytheStarCraft2Mod.makeID("PylonPower");
 	private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 	public static final String NAME = powerStrings.NAME;
 	public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-	public static final String IMG = ImgInitializer.makePath(ImgInitializer.ADDENERGY_POWER);
+	public static final String IMG = ImgInitializer.makePath(ImgInitializer.PYLON_POWER);
 
-	public AddEnergyPower(AbstractCreature owner, int amount){
+	public PylonPower(AbstractCreature owner, int amount){
 		this.name = NAME;
 		this.ID = POWER_ID;
 		this.owner = owner;
