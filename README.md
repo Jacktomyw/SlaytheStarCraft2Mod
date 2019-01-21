@@ -1,6 +1,6 @@
 # SlaytheStarCraft2Mod
 
-# v0.1.4
+# v0.1.6
 
 ## 简述
 
@@ -8,9 +8,7 @@
 
 这个版本基本实现了MOD可游玩。
 
-以及，这是第一个正式发布的先行版本。
-
-目前只支持简体中文。日后会考虑本地化。
+目前只支持简体中文和英语。
 
 ## MOD特性：
 
@@ -47,7 +45,5 @@
 如果你对本MOD有什么建议，或者想加入开发组（非常非常非常的缺美工），请联系我。
 
 [GitHub地址](https://github.com/Jacktomyw/SlaytheStarCraft2Mod)
-
-QQ群：338723825（加群备注）
 
 Steam：[Jacktomyw](https://steamcommunity.com/id/thelordofsaltyfish/)（加好友请先留言）
