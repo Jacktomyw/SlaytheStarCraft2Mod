@@ -1,35 +1,35 @@
 {
 	"SlaytheStarCraft2Mod:DoubleBladePower": {
         "NAME": "Double Blade",
-        "DESCRIPTIONS": ["You have played ATTACK card this turn."]
+        "DESCRIPTIONS": ["You have played #yATTACK card this turn."]
 	},
 	"SlaytheStarCraft2Mod:ConcentratedPower": {
         "NAME": "Concentrated",
-        "DESCRIPTIONS": ["The card with Concentrated will produces additional effects."]
+        "DESCRIPTIONS": ["The card with #yConcentrated will produces additional effects."]
 	},
 	"SlaytheStarCraft2Mod:TornPower": {
         "NAME": "Torn",
-        "DESCRIPTIONS": ["Receive","damage at after acting."]
+        "DESCRIPTIONS": ["Receive #b"," damage at after acting."]
 	},
 	"SlaytheStarCraft2Mod:PsionicPower": {
         "NAME": "Psionic",
-        "DESCRIPTIONS": ["The amount of next card dealing damage or gaining Shield will be increased by "," ."]
+        "DESCRIPTIONS": ["The amount of next card dealing damage or gaining #yShield will be increased by #b"," ."]
 	},
 	"SlaytheStarCraft2Mod:ShieldPower": {
         "NAME": "Shield",
-        "DESCRIPTIONS": ["Your shield can counteract "," damage."]
+        "DESCRIPTIONS": ["Your #yShield can counteract "," damage."]
 	},
 	"SlaytheStarCraft2Mod:ParryPower": {
         "NAME": "Parry",
-        "DESCRIPTIONS": ["You have played SKILL card this turn."]
+        "DESCRIPTIONS": ["You have played #ySKILL card this turn."]
 	},
 	"SlaytheStarCraft2Mod:DarknessApproachPower": {
 		"NAME": "Darkness Approach",
-		"DESCRIPTIONS": ["Gain "," Psionic at the end of your turn."]
+		"DESCRIPTIONS": ["Gain #b"," #yPsionic at the end of your turn."]
 	},
 	"SlaytheStarCraft2Mod:GiftsfromXelNagaPower": {
 		"NAME": "Gifts from Xel'Naga",
-		"DESCRIPTIONS": ["Gain Concentrated at the start of your turn."]
+		"DESCRIPTIONS": ["Gain #yConcentrated at the start of your turn."]
 	},
 	"SlaytheStarCraft2Mod:PylonPower": {
 		"NAME": "Pylon",
@@ -38,9 +38,47 @@
 	},
 	"SlaytheStarCraft2Mod:WayofDarkTemplarPower":{
 		"NAME": "Way of Dark Templar",
-		"DESCRIPTIONS":["At the start of your turn, if you do not receive damage that not be Blocked or defended by Shield last turn, or you do not give damage that not be Blocked last turn, gain ",
-		" Shield and ",
+		"DESCRIPTIONS":["At the start of your turn, if you do not receive damage unblocked or defended by #yShield last turn, or you do not give damage unblocked last turn, gain #b",
+		" #yShield and ",
 		" ."
 		]
+	},
+	"SlaytheStarCraft2Mod:CONSECRATEMEPOWER": {
+		"NAME": "CONSECRATE ME!",
+		"DESCRIPTIONS": ["When you receive the damage and HP losing effect from yourself, gain healing equals to #b",
+		" time(s) of that value."]
+	},
+	"SlaytheStarCraft2Mod:CounterAttackPower":{
+		"NAME": "Counter Attack",
+		"DESCRIPTIONS": ["When you receive damage, deal #b",
+		" damage to all enemies."]
+	},
+	"SlaytheStarCraft2Mod:DefiniteHatredPower":{
+		"NAME": "Definite Hatred",
+		"DESCRIPTIONS": ["When you receive damage, gain #b",
+		" #yStrength ."]
+	},
+	"SlaytheStarCraft2Mod:LaughingPower":{
+		"NAME": "Laughing",
+		"DESCRIPTIONS": ["You are laughing at your opponents."]
+	},
+	"SlaytheStarCraft2Mod:BeingLaughedPower":{
+		"NAME": "Being laughed",
+		"DESCRIPTIONS": ["This creature is laughed at."]
+	},
+	"SlaytheStarCraft2Mod:SoulDrawPower":{
+		"NAME": "Soul Draw",
+		"DESCRIPTIONS": ["For each time you receive damage this turn, draw #b",
+		" less card next turn."]
+	},
+	"SlaytheStarCraft2Mod:SpiritThreatPower":{
+		"NAME": "Spirit",
+		"DESCRIPTIONS": ["When you use a card with #yOverload , decrease the cost of your cards with #yOverload in your hand by #b",
+		" ."]
+	},
+	"SlaytheStarCraft2Mod:DrawReductionMultiplePower":{
+		"NAME": "Draw Reduction Next Turn",
+		"DESCRIPTIONS": ["Draw #b",
+		" card(s) less next turn。"]
 	}
 }

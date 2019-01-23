@@ -19,7 +19,7 @@
         "Shield",
         "shield"
       ],
-      "DESCRIPTION": "Shield can defend damage. Shield won't be removed at the end of turn."
+      "DESCRIPTION": "Shield can defend damage. Attention that when damage is defend completely by Shield , that still counts as you receive damage."
     },
     {
       "NAMES": [
@@ -34,6 +34,13 @@
         "stun"
       ],
       "DESCRIPTION": "Enemies being stunned will not act in its next turn."
+    },
+    {
+      "NAMES": [
+        "Overload",
+        "overload"
+      ],
+      "DESCRIPTION": "If this card remains on your hand at the end of your turn, you will receive damage equals to the amount of Overload."
     }
   ]
 }

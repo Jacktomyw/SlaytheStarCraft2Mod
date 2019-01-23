@@ -54,8 +54,8 @@ public class PsionicPower extends AbstractPower {
 //		if(card.hasTag(CardTagsEnum.SHIELD)) {
 //			isUsed = true;
 //		}
-		
 		if(!card.hasTag(CardTagsEnum.NOPSIONIC)) {
+			SlaytheStarCraft2Mod.logger.info("the card " + card.name + " doesn't have tag: NOPSIONIC");
 			if(card.type == CardType.ATTACK || card.hasTag(CardTagsEnum.SHIELD)) {
 				if(AbstractDungeon.player.hasRelic(SlaytheStarCraft2Mod.makeID("KeyStone"))) {
 					if(((KeyStone)AbstractDungeon.player.getRelic(SlaytheStarCraft2Mod.makeID("KeyStone"))).isFirstCard) {
@@ -68,6 +68,8 @@ public class PsionicPower extends AbstractPower {
 				this.flash();
 				AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this.ID));
 			}
+		}else {
+			SlaytheStarCraft2Mod.logger.info("the card " + card.name + " has tag: NOPSIONIC!");
 		}
 //		if(isUsed) {
 //			this.flash();
@@ -82,7 +84,6 @@ public class PsionicPower extends AbstractPower {
 	}
 
 	public float modifyShield(float shieldAmount) {
-		SlaytheStarCraft2Mod.logger.info("Shield up by psionic");
 		return shieldAmount+=(float)this.amount;
 	}
 //

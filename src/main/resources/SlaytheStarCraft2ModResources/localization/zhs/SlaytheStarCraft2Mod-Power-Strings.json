@@ -1,35 +1,35 @@
 {
 	"SlaytheStarCraft2Mod:DoubleBladePower": {
         "NAME": "双刃",
-        "DESCRIPTIONS": ["你这回合已经打出过攻击牌。"]
+        "DESCRIPTIONS": ["你这回合已经打出过 #y攻击牌 。"]
 	},
 	"SlaytheStarCraft2Mod:ConcentratedPower": {
         "NAME": "专注",
-        "DESCRIPTIONS": ["拥有专注关键词的牌将产生额外效果。"]
+        "DESCRIPTIONS": ["拥有 #y专注 关键词的牌将产生额外效果。"]
 	},
 	"SlaytheStarCraft2Mod:TornPower": {
         "NAME": "撕裂",
-        "DESCRIPTIONS": ["每回合结束时受到","点伤害。"]
+        "DESCRIPTIONS": ["每回合结束时受到 #b"," 点伤害。"]
 	},
 	"SlaytheStarCraft2Mod:PsionicPower": {
         "NAME": "灵能",
-        "DESCRIPTIONS": ["你下一张造成伤害或获得护盾的牌数值加","。"]
+        "DESCRIPTIONS": ["你下一张造成伤害或获得 #y护盾 的牌数值加 #b"," 。"]
 	},
 	"SlaytheStarCraft2Mod:ShieldPower": {
         "NAME": "护盾",
-        "DESCRIPTIONS": ["你的护盾还能抵挡","点伤害。"]
+        "DESCRIPTIONS": ["你的 #y护盾 还能抵挡 #b"," 点伤害。"]
 	},
 	"SlaytheStarCraft2Mod:ParryPower": {
         "NAME": "招架",
-        "DESCRIPTIONS": ["你这回合已经打出过技能牌。"]
+        "DESCRIPTIONS": ["你这回合已经打出过 #y技能牌 。"]
 	},
 	"SlaytheStarCraft2Mod:DarknessApproachPower": {
 		"NAME": "黑暗迫袭",
-		"DESCRIPTIONS": ["在回合结束时获得","层灵能。"]
+		"DESCRIPTIONS": ["在回合结束时获得 #b"," 层 #y灵能 。"]
 	},
 	"SlaytheStarCraft2Mod:GiftsfromXelNagaPower": {
 		"NAME": "萨尔纳加之赐",
-		"DESCRIPTIONS": ["在每个回合开始时获得 专注。"]
+		"DESCRIPTIONS": ["在每个回合开始时，获得 #y专注。"]
 	},
 	"SlaytheStarCraft2Mod:PylonPower": {
 		"NAME": "水晶塔超载",
@@ -38,9 +38,47 @@
 	},
 	"SlaytheStarCraft2Mod:WayofDarkTemplarPower":{
 		"NAME": "黑暗圣堂之路",
-		"DESCRIPTIONS":["在你的回合开始时，如果你上回合没有受到未被格挡或被护盾抵消的伤害，或者没有造成未被格挡的伤害，获得 ",
-		" 点护盾，下个回合开始时获得 ",
+		"DESCRIPTIONS":["在你的回合开始时，如果你上回合没有受到未被格挡或被 #y护盾 抵消的伤害，或者没有造成未被格挡的伤害，获得 #b",
+		" 点 #y护盾 ，下个回合开始时获得 ",
 		"。"
 		]
+	},
+	"SlaytheStarCraft2Mod:CONSECRATEMEPOWER": {
+		"NAME": "供奉我！",
+		"DESCRIPTIONS": ["受到来自自己的伤害和生命损失效果时，回复相当于其数值 #b",
+		" 倍的生命。"]
+	},
+	"SlaytheStarCraft2Mod:CounterAttackPower":{
+		"NAME": "反击",
+		"DESCRIPTIONS": ["受到伤害时，对所有敌人造成 #b",
+		" 点伤害。"]
+	},
+	"SlaytheStarCraft2Mod:DefiniteHatredPower":{
+		"NAME": "绝对仇恨",
+		"DESCRIPTIONS": ["受到伤害时，获得 #b",
+		" 点 #y力量 。"]
+	},
+	"SlaytheStarCraft2Mod:LaughingPower":{
+		"NAME": "嘲笑",
+		"DESCRIPTIONS": ["你正在嘲笑你的对手。"]
+	},
+	"SlaytheStarCraft2Mod:BeingLaughedPower":{
+		"NAME": "被嘲笑",
+		"DESCRIPTIONS": ["这个生物被嘲笑了，它很失落。"]
+	},
+	"SlaytheStarCraft2Mod:SoulDrawPower":{
+		"NAME": "灵魂吸取",
+		"DESCRIPTIONS": ["你在这个回合每受到一次伤害，下一回合少抽 #b",
+		" 张牌。"]
+	},
+	"SlaytheStarCraft2Mod:SpiritThreatPower":{
+		"NAME": "锐气",
+		"DESCRIPTIONS": ["你每打出一张具有 #y超载 的牌，你手牌中具有 #y超载 的牌费用 - #b",
+		" 。"]
+	},
+	"SlaytheStarCraft2Mod:DrawReductionMultiplePower":{
+		"NAME": "下回合抽牌减少",
+		"DESCRIPTIONS": ["你下个回合少抽 #b",
+		" 张牌。"]
 	}
 }

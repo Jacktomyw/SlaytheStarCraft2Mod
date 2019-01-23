@@ -55,7 +55,25 @@ public class ImgInitializer {
     public static final String WAYOFDARKTEMPLAR = makeExample("cards/power");//should be...
     public static final String WORMHOLE = makeExample("cards/skill");//should be...
     public static final String XELNAGAPROPHECY = makeExample("cards/skill");//should be...
-    
+	public static final String HIGHKINGBLADE = makeExample("cards/attack");
+    public static final String OBLIVIONWAVE = makeExample("cards/attack");
+    public static final String PSIONICOPPRESSION = makeExample("cards/skill");
+    public static final String AGILITYCONTRACT = makeExample("cards/skill");
+    public static final String CHAOSDOMINION = makeExample("cards/skill");
+    public static final String CHAOSSTRIKE = makeExample("cards/attack");
+    public static final String CONSECRATEME = makeExample("cards/power");
+    public static final String COUNTERATTACK = makeExample("cards/power");
+    public static final String DEFINITEHATRED = makeExample("cards/power");
+    public static final String LAUGHTOTHEEND = makeExample("cards/skill");
+    public static final String LIGHTNINGTURBULENCE = makeExample("cards/attack");
+    public static final String POWERSHOW = makeExample("cards/attack");
+    public static final String RAGEOFHIGHKING = makeExample("cards/skill");
+    public static final String SOULDRAW = makeExample("cards/skill");
+    public static final String SPIRITTHREAT = makeExample("cards/power");
+    public static final String STRETCHLIGHTNING = makeExample("cards/attack");
+    public static final String TAUGHTSTRIKE = makeExample("cards/attack");
+    public static final String LIGHTNINGFLUSH = makeExample("cards/attack");
+
 // Power images
     //TODO add power imgs here
     public static final String CONCENTRATED_POWER = makeExample("powers/Concentrated_power");
@@ -67,11 +85,21 @@ public class ImgInitializer {
 	public static final String GIFTSFROMXELNAGA_POWER = makeExample("powers/GiftsfromXelNaga_power");
 	public static final String PYLON_POWER = makeExample("powers/Pylon_power");
 	public static final String WAYOFDARKTEMPLAR_POWER = makeExample("powers/WayofDarkTemplar_power");
+	public static final String CONSECRATEME_POWER = makeExample("powers/CONSECRATEME_POWER");
+	public static final String COUNTERATTACK_POWER = makeExample("powers/CounterAttack_power");
+	public static final String DEFINITEHATRED_POWER = makeExample("powers/DefiniteHatred_power");
+	public static final String LAUGHING_POWER = makeExample("powers/Laughing_power");
+	public static final String BEINGLAUGHED_POWER = makeExample("powers/BeingLaughed_power");
+	public static final String SOULDRAW_POWER = makeExample("powers/SoulDraw_power");
+	public static final String SPIRITTHREAT_POWER = makeExample("powers/SpiritThreat_power");
+	public static final String DRAWREDUCTIONMULTIPLE_POWER = makeExample("powers/DrawReductionMultiple_power");
 	
 // Relic images
     //TODO add relic imgs here
     public static final String HeartofProtoss = "relics/HeartofProtoss.png";
-    public static final String HeartofProtoss_USED = "relics/HeartofProtoss_used.png";
+    public static final String HeartofProtoss_RED = "relics/HeartofProtoss_red.png";
+    public static final String HeartofProtoss_BLUE = "relics/HeartofProtoss_blue.png";
+    public static final String HeartofProtoss_GREEN = "relics/HeartofProtoss_green.png";
     public static final String HeartofProtoss_OUTLINE = "relics/outline/HeartofProtoss.png";
     public static final String IanCrystal = makeExample("relics/IanCrystal");
     public static final String IanCrystal_OUTLINE = makeExample("relics/outline/ARelic");
@@ -83,6 +111,11 @@ public class ImgInitializer {
     public static final String KhaydarinAmulet_OUTLINE = makeExample("relics/outline/ARelic");
     public static final String MiniVoidSeeker = makeExample("relics/MiniVoidSeeker");
     public static final String MiniVoidSeeker_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String UpgradingChain = makeExample("relics/UpgradingChain");
+    public static final String UpgradingChain_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String SolarBattleaxe = makeExample("relics/SolarBattleaxe");
+    public static final String SolarBattleaxe_OUTLINE = makeExample("relics/outline/ARelic");
+
     
 // Event images
     //TODO add event imgs here

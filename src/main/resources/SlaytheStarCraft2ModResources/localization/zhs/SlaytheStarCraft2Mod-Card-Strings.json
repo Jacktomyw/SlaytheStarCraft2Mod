@@ -40,7 +40,7 @@
 	},
 	"SlaytheStarCraft2Mod:MasterGradeWarppingBlade":{
 		"NAME": "大师级折跃灵刃",
-		"DESCRIPTION": "造成 !D! 点伤害 3 次， 灵能 的效果在这张牌上为 !M! 倍。"
+		"DESCRIPTION": "造成 !D! 点伤害 3 次， 灵能 的效果在这张牌上为 !M! 倍。 NL 消耗 。"
 	},
 	"SlaytheStarCraft2Mod:Meditation":{
 		"NAME": "冥想",
@@ -119,5 +119,94 @@
 	"SlaytheStarCraft2Mod:XelNagaProphecy":{
 		"NAME": "萨尔纳加预言",
 		"DESCRIPTION": "抽 1 张牌，这张牌 保留 到下回合，在下回合获得等于其原本费用的 [E] 。"
+	},
+	"SlaytheStarCraft2Mod:HighKingBlade":{
+		"NAME": "高阶领主之刃",
+		"DESCRIPTION": "造成 !D! 点伤害。  超载  10。 NL 超载 后对随机敌人造成 !SlaytheStarCraft2Mod:D2! 点伤害。这不算作是使用卡牌。"
+	},
+	"SlaytheStarCraft2Mod:OblivionWave":{
+		"NAME": "湮灭波",
+		"DESCRIPTION": "造成 !D! 点伤害。  超载  4。"
+	},
+	"SlaytheStarCraft2Mod:PsionicOppression":{
+		"NAME": "灵能压迫",
+		"DESCRIPTION": "给予 !M! 层 虚弱 ， !M! 层 易伤 和 !M! 层 撕裂 。 超载 2 。",
+		"UPGRADE_DESCRIPTION":"给予所有敌人 !M! 层 虚弱 ， !M! 层 易伤 和 !M! 层 撕裂 。 超载 3 。"
+	},
+	"SlaytheStarCraft2Mod:AgilityContract":{
+		"NAME": "迅捷契约",
+		"DESCRIPTION": "抽 5 张牌，充满你的 [E] ，你的 力量 - !M! 。 超载 1 。"
+	},
+	"SlaytheStarCraft2Mod:ChaosDominion":{
+		"NAME": "混乱统治",
+		"DESCRIPTION": "获得 格挡 值，数值相当于你手牌中所有 超载 牌的 超载 值之和并使所有手牌 保留  1 回合.",
+		"UPGRADE_DESCRIPTION": "获得 格挡 值，数值相当于你手牌中所有 超载 牌的 超载 值之和 +3 并使所有手牌 保留  1 回合.",
+		"EXTENDED_DESCRIPTION": [
+		" NL （获得 !B! 点 格挡 。）"
+		]
+	},
+	"SlaytheStarCraft2Mod:ChaosStrike":{
+		"NAME": "混乱打击",
+		"DESCRIPTION": "造成 !D! 点伤害。随机将一张带有 超载 的牌加入你的手牌。 超载 2 。",
+		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。随机将一张带有 超载 的牌加入你的手牌，这张牌在本回合的费用变为 0 。 超载 2 。"
+	},
+	"SlaytheStarCraft2Mod:CONSECRATEME!":{
+		"NAME": "供奉我！",
+		"DESCRIPTION": "受到来自自己的伤害和生命损失效果时，回复相当于其数值的生命。",
+		"UPGRADE_DESCRIPTION": " 固有 。受到来自自己的伤害和生命损失效果时，回复相当于其数值的生命。"
+	},
+	"SlaytheStarCraft2Mod:CounterAttack":{
+		"NAME": "反击",
+		"DESCRIPTION": "受到伤害时，对所有敌人造成 !M! 点伤害。"
+	},
+	"SlaytheStarCraft2Mod:DefiniteHatred":{
+		"NAME": "绝对仇恨",
+		"DESCRIPTION": "受到伤害时，获得 1 点 力量 。 超载 2 。"
+	},
+	"SlaytheStarCraft2Mod:LaughtoTheEnd":{
+		"NAME": "笑到最后",
+		"DESCRIPTION": "获得 !B! 点 格挡 。如果你在你的回合内没有击杀一名非爪牙的敌人，你的生命值变为 1 。 超载 1 。"
+	},
+	"SlaytheStarCraft2Mod:LightningTurbulence":{
+		"NAME": "闪电乱流",
+		"DESCRIPTION": "对所有敌人造成 !D! 点伤害。如果命中了一个以上的敌人，再次对所有敌人造成 !D! 点伤害。 超载 3 。"
+	},
+	"SlaytheStarCraft2Mod:PowerShow":{
+		"NAME": "力量展示",
+		"DESCRIPTION": "造成伤害，数值相当于你手牌中所有 超载 牌的 超载 值之和 + !M! 。",
+		"EXTENDED_DESCRIPTION": [
+		" NL （造成 !D! 点伤害。）"
+		]
+	},
+	"SlaytheStarCraft2Mod:RageofHighKing":{
+		"NAME": "高阶领主之怒",
+		"DESCRIPTION": "获得敌人数量 !M! 倍的 力量 。 超载 2 。"
+	},
+	"SlaytheStarCraft2Mod:SoulDraw":{
+		"NAME": "灵魂吸取",
+		"DESCRIPTION": "获得 1 层 无实体 。你在这回合每受到一次伤害，下回合少抽 1 张牌。 超载 1 。 NL 消耗 。",
+		"UPGRADE_DESCRIPTION": "获得 1 层 无实体 。你在这回合每受到一次伤害，下回合少抽 1 张牌。 超载 1 。"
+	},
+	"SlaytheStarCraft2Mod:SpiritThreat":{
+		"NAME": "锐气逼人",
+		"DESCRIPTION": "在你使用一张 超载 牌后，使你手牌中所有的 超载 牌在本回合的费用 -1 。",
+		"UPGRADE_DESCRIPTION": " 固有 。在你使用一张 超载 牌后，使你手牌中所有的 超载 牌在本回合的费用 -1 。"
+	},
+	"SlaytheStarCraft2Mod:StretchLightning":{
+		"NAME": "延展闪电",
+		"DESCRIPTION": "造成 !D! 点伤害。对目标以外的所有敌人造成 !M! %的伤害。 超载 3 。",
+		"EXTENDED_DESCRIPTION": [
+		" NL （造成",
+		"点伤害。）"
+		]
+	},
+	"SlaytheStarCraft2Mod:TaughtStrike":{
+		"NAME": "嘲讽打击",
+		"DESCRIPTION": "造成 !D! 点伤害。如果目标有异常状态，则改为造成 !SlaytheStarCraft2Mod:D2! 点伤害。 超载 2 。",
+		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。如果目标有异常状态，则改为造成 !SlaytheStarCraft2Mod:D2! 点伤害。给予 1 层 易伤 。 超载 2 。"
+	},
+	"SlaytheStarCraft2Mod:LightningFlush":{
+		"NAME": "闪电乱流",
+		"DESCRIPTION": "造成 !D! 点伤害。如果你的抽牌堆中有闪电乱流，再造成 !D! 点伤害。 超载 1 。 超载 后将这张牌的一个复制洗入弃牌堆。"
 	}
 }

@@ -51,6 +51,25 @@ public class CardInitializer {
         BaseMod.addCard(new WayofDarkTemplar());
         BaseMod.addCard(new Wormhole());
         BaseMod.addCard(new XelNagaProphecy());
+        BaseMod.addCard(new HighKingBlade());
+        BaseMod.addCard(new OblivionWave());
+        BaseMod.addCard(new PsionicOppression());
+        BaseMod.addCard(new AgilityContract());
+        BaseMod.addCard(new ChaosDominion());
+        BaseMod.addCard(new ChaosStrike());
+        BaseMod.addCard(new CONSECRATEME());
+        BaseMod.addCard(new CounterAttack());
+        BaseMod.addCard(new DefiniteHatred());
+        BaseMod.addCard(new LaughtoTheEnd());
+        BaseMod.addCard(new LightningTurbulence());
+        BaseMod.addCard(new PowerShow());
+        BaseMod.addCard(new RageofHighKing());
+        BaseMod.addCard(new SoulDraw());
+        BaseMod.addCard(new SpiritThreat());
+        BaseMod.addCard(new StretchLightning());
+        BaseMod.addCard(new TaughtStrike());
+        BaseMod.addCard(new LightningFlush());
+
 	}
 	
 	public static void unlockCards() {
@@ -84,7 +103,24 @@ public class CardInitializer {
         UnlockTracker.unlockCard(WayofDarkTemplar.ID);
         UnlockTracker.unlockCard(Wormhole.ID);
         UnlockTracker.unlockCard(XelNagaProphecy.ID);
-        
+        UnlockTracker.unlockCard(HighKingBlade.ID);
+        UnlockTracker.unlockCard(OblivionWave.ID);
+        UnlockTracker.unlockCard(PsionicOppression.ID);
+        UnlockTracker.unlockCard(AgilityContract.ID);
+        UnlockTracker.unlockCard(ChaosDominion.ID);
+        UnlockTracker.unlockCard(ChaosStrike.ID);
+        UnlockTracker.unlockCard(CONSECRATEME.ID);
+        UnlockTracker.unlockCard(CounterAttack.ID);
+        UnlockTracker.unlockCard(DefiniteHatred.ID);
+        UnlockTracker.unlockCard(LaughtoTheEnd.ID);
+        UnlockTracker.unlockCard(LightningTurbulence.ID);
+        UnlockTracker.unlockCard(PowerShow.ID);
+        UnlockTracker.unlockCard(RageofHighKing.ID);
+        UnlockTracker.unlockCard(SoulDraw.ID);
+        UnlockTracker.unlockCard(SpiritThreat.ID);
+        UnlockTracker.unlockCard(StretchLightning.ID);
+        UnlockTracker.unlockCard(TaughtStrike.ID);
+        UnlockTracker.unlockCard(LightningFlush.ID);
 	}
 	
 }

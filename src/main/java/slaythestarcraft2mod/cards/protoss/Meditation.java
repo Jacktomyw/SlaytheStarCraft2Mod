@@ -31,7 +31,8 @@ public class Meditation extends CustomCard{
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
 	private static final int COST = 1;
-	private static final int BLOCK = 3;
+	private static final int BLOCK = 8;
+	private static final int UPGRADE_PLUS_BLOCK = 3;
 	
 	public Meditation() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -53,7 +54,7 @@ public class Meditation extends CustomCard{
 	public void upgrade() {
 		if(!this.upgraded) {
 			this.upgradeName();
-			this.upgradeBaseCost(0);
+			this.upgradeBlock(UPGRADE_PLUS_BLOCK);
 			this.initializeDescription();
 		}
 	}

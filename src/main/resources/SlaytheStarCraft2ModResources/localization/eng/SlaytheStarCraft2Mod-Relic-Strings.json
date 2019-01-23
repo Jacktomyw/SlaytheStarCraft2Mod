@@ -3,28 +3,28 @@
 		"NAME": "Mini Void Seeker",
 		"FLAVOR": "This relic do not have flavor yet, because I need a translator.",
 		"DESCRIPTIONS": [
-			"If you do not receive damage that not be blocked or defended by Shield, or you do not give damage that not be blocked this turn, gain Concentrated and [E] next turn."
+			"If you do not receive damage unblocked or defended by #yShield, or you do not give damage unblocked this turn, gain #yConcentrated and [E] next turn."
 		]
 	},
 	"SlaytheStarCraft2Mod:IanCrystal": {
 		"NAME": "Ian Crystal",
 		"FLAVOR": "This relic do not have flavor yet, because I need a translator.",
 		"DESCRIPTIONS": [
-			"Gain 2 Psionic at start of your turn."
+			"Gain 2 #yPsionic at start of your turn."
 		]
 	},
 	"SlaytheStarCraft2Mod:Khala": {
 		"NAME": "Khala",
 		"FLAVOR": "This relic do not have flavor yet, because I need a translator.",
 		"DESCRIPTIONS": [
-			"At the end of your turn, if you used at least 3 cards and all the cards' type you used are same, gain 15 Shield."
+			"At the end of your turn, if you used at least 3 cards and all the cards' type you used are same, gain 15 #yShield."
 		]
 	},
 	"SlaytheStarCraft2Mod:KeyStone": {
 		"NAME": "Keystone",
 		"FLAVOR": "This relic do not have flavor yet, because I need a translator.",
 		"DESCRIPTIONS": [
-			"For each turn, the first card you used that will consume Psionic will not consume Psionic."
+			"For each turn, the first card you used that will consume #yPsionic will not consume #yPsionic ."
 		]
 	},
 	"SlaytheStarCraft2Mod:KhaydarinAmulet": {
@@ -40,7 +40,26 @@
 		"FLAVOR": "This heart seems like having famous Protoss leaders' souls in it.",
 		"DESCRIPTIONS": [
 			"This heart must be useful.",
+			"You selected Artanis.",
+			"You selected Zeratul.",
+			"You selected Alarak.",
 			"You have seen the Protoss leaders."
+		]
+	},
+	"SlaytheStarCraft2Mod:UpgradingChain": {
+		"NAME": "Upgrading Chain",
+		"FLAVOR": "This relic do not have flavor yet, because I need a translator.",
+		"DESCRIPTIONS": [
+			"For each third non-minion enemy you slains with #yOverload Cards, Gain 1 #yStrength at the start of each battle.",
+			"You need to slain ",
+			" more enemy(ies) to gain next #yStrength."
+		]
+	},
+	"SlaytheStarCraft2Mod:SolarBattleaxe": {
+		"NAME": "SolarBattleaxe",
+		"FLAVOR": "Just like a windmill...",
+		"DESCRIPTIONS": [
+			"Give all enemies #b1 #yTorn at start of your turn."
 		]
 	}
 }

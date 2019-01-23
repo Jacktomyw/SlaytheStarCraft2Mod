@@ -221,7 +221,6 @@ public abstract class MultipleBasicValueAndShieldCustomCard extends CustomCard {
 		this.isShieldModified = false;
 		float tmp = (float) this.baseShield;
 		if (AbstractDungeon.player.hasPower(SlaytheStarCraft2Mod.makeID("PsionicPower"))) {
-			SlaytheStarCraft2Mod.logger.info("has psionic");
 			tmp = ((PsionicPower) AbstractDungeon.player.getPower(SlaytheStarCraft2Mod.makeID("PsionicPower"))).modifyShield(tmp);
 			
 			if (this.baseShield != MathUtils.floor(tmp)) {
@@ -238,7 +237,6 @@ public abstract class MultipleBasicValueAndShieldCustomCard extends CustomCard {
 	}
 	
 	public void calculateCardDamage(AbstractMonster mo) {
-		SlaytheStarCraft2Mod.logger.info("child invoked");
 		this.applyPowersToBlock2();
 		this.applyPowersToShield();
 		AbstractPlayer player = AbstractDungeon.player;

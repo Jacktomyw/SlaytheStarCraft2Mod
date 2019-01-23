@@ -19,9 +19,8 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
-import slaythestarcraft2mod.cards.protoss.Basic_Defend_Protoss;
-import slaythestarcraft2mod.cards.protoss.Basic_Strike_Protoss;
-import slaythestarcraft2mod.cards.protoss.ShadowStrike;
+import slaythestarcraft2mod.SlaytheStarCraft2Mod;
+import slaythestarcraft2mod.cards.protoss.*;
 import slaythestarcraft2mod.initializers.ImgInitializer;
 import slaythestarcraft2mod.patches.AbstractCardEnum;
 import slaythestarcraft2mod.relics.HeartofProtoss;
@@ -34,7 +33,6 @@ public class Protoss extends CustomPlayer{
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;
-    public int SELECTED_LEADER = 0;
     
     public static final String[] orbTextures = {
             "SlaytheStarCraft2ModResources/images/char/protoss/orb/layer1.png",
@@ -155,8 +153,12 @@ public class Protoss extends CustomPlayer{
     //Which starting card should specific events give you?
     @Override
     public AbstractCard getStartCardForEvent() {
-    	switch(SELECTED_LEADER) {
-    	case 2: return new ShadowStrike();
+    	HeartofProtoss r = (HeartofProtoss) this.getRelic(SlaytheStarCraft2Mod.makeID("HeartofProtoss"));
+    	
+    	switch(r.SELECTED_LEADER) {
+    	
+    	case "Zeratul": return new ShadowStrike();
+    	case "Alarak": return new OblivionWave();
     	default: return new Basic_Strike_Protoss();
     	}
     }

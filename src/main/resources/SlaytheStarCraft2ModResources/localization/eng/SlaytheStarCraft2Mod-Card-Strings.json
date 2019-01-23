@@ -40,7 +40,7 @@
 	},
 	"SlaytheStarCraft2Mod:MasterGradeWarppingBlade":{
 		"NAME": "MasterGrade Warpping Blade",
-		"DESCRIPTION": "Deal !D! damage 3 times, Psionic counts !M! times on this card."
+		"DESCRIPTION": "Deal !D! damage 3 times, Psionic counts !M! times on this card. NL Exhaust ."
 	},
 	"SlaytheStarCraft2Mod:Meditation":{
 		"NAME": "Meditation",
@@ -119,5 +119,94 @@
 	"SlaytheStarCraft2Mod:XelNagaProphecy":{
 		"NAME": "Xel'Naga Prophecy",
 		"DESCRIPTION": "Draw 1 card. This card get Retain until next turn. Gain [E] which equals to the cost of this card next turn."
+	},
+	"SlaytheStarCraft2Mod:HighKingBlade":{
+		"NAME": "High King's Blade",
+		"DESCRIPTION": "Deal !D! damage. Overload 10. Deal !SlaytheStarCraft2Mod:D2! damage to random enemy after Overload . This is not card using."
+	},
+	"SlaytheStarCraft2Mod:OblivionWave":{
+		"NAME": "Oblivion Wave",
+		"DESCRIPTION": "Deal !D! damage. Overload 4 ."
+	},
+	"SlaytheStarCraft2Mod:PsionicOppression":{
+		"NAME": "Psionic Oppression",
+		"DESCRIPTION": "Give an enemy !M! Weak , !M! Vulnerable and !M! Torn . Overload 2 .",
+		"UPGRADE_DESCRIPTION":"Give all enemies !M! Weak , !M! Vulnerable and !M! Torn . Overload 3 ."
+	},
+	"SlaytheStarCraft2Mod:AgilityContract":{
+		"NAME": "Agility Contract",
+		"DESCRIPTION": "Draw 5 cards. Recharge your [E] . Your Strength -2 . Overload 1 ."
+	},
+	"SlaytheStarCraft2Mod:ChaosDominion":{
+		"NAME": "Chaos Dominion",
+		"DESCRIPTION": "Gain Block , which equals to the summary of the value of Overload in your hand. All your hand get Retain for one turn.",
+		"UPGRADE_DESCRIPTION": "Gain Block , which equals to the summary of the value of Overload +3 in your hand. All your hand get Retain for one turn.",
+		"EXTENDED_DESCRIPTION":[
+		" NL (Gain !B! Block .)"
+		]
+	},
+	"SlaytheStarCraft2Mod:ChaosStrike":{
+		"NAME": "Chaos Strike",
+		"DESCRIPTION": "Deal !D! damage. Add a random card with Overload to your hand. Overload 2 .",
+		"UPGRADE_DESCRIPTION": "Deal !D! damage. Add a random card with Overload to your hand, whose cost becomes 0 in this turn. Overload 2 ."
+	},
+	"SlaytheStarCraft2Mod:CONSECRATEME!":{
+		"NAME": "CONSECRATE ME!",
+		"DESCRIPTION": "When you receive the damage and HP losing effect from yourself, gain healing equals to that value.",
+		"UPGRADE_DESCRIPTION": " Innate . When you receive the damage and HP losing effect from yourself, gain healing equals to that value."
+	},
+	"SlaytheStarCraft2Mod:CounterAttack":{
+		"NAME": "Counter Attack",
+		"DESCRIPTION": "Deal !M! damage to all enemies when you receive damage."
+	},
+	"SlaytheStarCraft2Mod:DefiniteHatred":{
+		"NAME": "Definite Hatred",
+		"DESCRIPTION": "Gain 1 Strength when you receive damage. Overload 2 ."
+	},
+	"SlaytheStarCraft2Mod:LaughtoTheEnd":{
+		"NAME": "Laugh to The End",
+		"DESCRIPTION": "Gain !B! Block . If you do not slain an enemy who is not a minion in your turn, your health becomes 1 . Overload 1 ."
+	},
+	"SlaytheStarCraft2Mod:LightningTurbulence":{
+		"NAME": "Lighting Turbulence",
+		"DESCRIPTION": "Deal !D! damage to all enemies. If this hits more than 1 enemy, deal !D! damage to all enemies again. Overload 3 ."
+	},
+	"SlaytheStarCraft2Mod:PowerShow":{
+		"NAME": "Power Show",
+		"DESCRIPTION": "Deal damage equals to the summary of the value of Overload + !M! in your hand.",
+		"EXTENDED_DESCRIPTION": [
+		" NL (Deal !D! damage.)"
+		]
+	},
+	"SlaytheStarCraft2Mod:RageofHighKing":{
+		"NAME": "Rage of High King",
+		"DESCRIPTION": "Gain Strength equals to the !M! times of numbers of enemies. Overload 2 ."
+	},
+	"SlaytheStarCraft2Mod:SoulDraw":{
+		"NAME": "Soul Draw",
+		"DESCRIPTION": "Gain 1 Intangible . For each time you receive damage this turn, draw 1 less card next turn. Overload 1 . NL Exhaust .",
+		"UPGRADE_DESCRIPTION": "Gain 1 Intangible . For each time you receive damage this turn, draw 1 less card next turn. Overload 1 ."
+	},
+	"SlaytheStarCraft2Mod:SpiritThreat":{
+		"NAME": "Spirit Threat",
+		"DESCRIPTION": "After use a card with Overload , decrease the cost of Overload cards in your hand by 1 in this turn.",
+		"UPGRADE_DESCRIPTION": " Innate . After use a card with Overload , decrease the cost of Overload cards in your hand by 1 in this turn."
+	},
+	"SlaytheStarCraft2Mod:StretchLightning":{
+		"NAME": "Stretch Lightning",
+		"DESCRIPTION": "Deal !D! damage. Deal !M! % damage to all other enemies. Overload 3 .",
+		"EXTENDED_DESCRIPTION":[
+		" NL (Deal ",
+		" damage.)"
+		]
+	},
+	"SlaytheStarCraft2Mod:TaughtStrike":{
+		"NAME": "Taught Strike",
+		"DESCRIPTION": "Deal !D! damage. If target has DEBUFF, deal !SlaytheStarCraft2Mod:D2! damage instead. Overload 2 .",
+		"UPGRADE_DESCRIPTION": "Deal !D! damage. If target has DEBUFF, deal !SlaytheStarCraft2Mod:D2! damage instead. Give 1 Vulnerable . Overload 2 ."
+	},
+	"SlaytheStarCraft2Mod:LightningFlush":{
+		"NAME": "Lightning Flush",
+		"DESCRIPTION": "Deal !D! damage. If you have Lightning Flush in your draw pile, deal !D! damage again. Overload 1. Add one copy of this card to your discard pile after Overload ."
 	}
 }

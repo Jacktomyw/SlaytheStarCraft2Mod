@@ -5,8 +5,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public class CardTagsEnum {
 
-	@SpireEnum
-	public static AbstractCard.CardTags SHIELD;
-	public static AbstractCard.CardTags NOPSIONIC;
+	@SpireEnum	public static AbstractCard.CardTags SHIELD;
+	@SpireEnum	public static AbstractCard.CardTags NOPSIONIC;
+	@SpireEnum	public static AbstractCard.CardTags OVERLOAD;
 	
 }
