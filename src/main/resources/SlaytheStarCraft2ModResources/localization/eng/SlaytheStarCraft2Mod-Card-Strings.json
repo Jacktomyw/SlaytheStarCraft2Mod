@@ -148,7 +148,7 @@
 	"SlaytheStarCraft2Mod:ChaosStrike":{
 		"NAME": "Chaos Strike",
 		"DESCRIPTION": "Deal !D! damage. Add a random card with Overload to your hand. Overload 2 .",
-		"UPGRADE_DESCRIPTION": "Deal !D! damage. Add a random card with Overload to your hand, whose cost becomes 0 in this turn. Overload 2 ."
+		"UPGRADE_DESCRIPTION": "Deal !D! damage. Add a random upgraded card with Overload to your hand. Overload 2 ."
 	},
 	"SlaytheStarCraft2Mod:CONSECRATEME!":{
 		"NAME": "CONSECRATE ME!",

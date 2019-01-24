@@ -31,7 +31,8 @@ public class UpgradingChain extends CustomRelic implements CustomSavable<Integer
 	public void onMonsterDeath(AbstractMonster m) {
 		if(AbstractDungeon.player.cardInUse!=null) {
 			if(AbstractDungeon.player.cardInUse.hasTag(CardTagsEnum.OVERLOAD)) {
-				if(!m.hasPower("Minion")) {
+				if((m.isDying || m.currentHealth <= 0) && !m.halfDead
+						&& !m.hasPower("Minion")) {
 					this.flash();
 					if(enemytoSlain==1) {
 						enemytoSlain=3;

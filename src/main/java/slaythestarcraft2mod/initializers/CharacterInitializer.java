@@ -10,9 +10,9 @@ import slaythestarcraft2mod.patches.*;
 public class CharacterInitializer {
 	
 	//buttons
-    public static final String PROTOSS_BUTTON = ImgInitializer.makeExample("charSelect/ProtossButton");
+    public static final String PROTOSS_BUTTON = "charSelect/ProtossButton.png";
     //backgrounds
-    public static final String PROTOSS_BACKGROUND = ImgInitializer.makeExample("charSelect/ProtossBG");
+    public static final String PROTOSS_BACKGROUND = "charSelect/ProtossBG.png";
     
 	public static final Logger logger = LogManager.getLogger(CharacterInitializer.class.getName());
 

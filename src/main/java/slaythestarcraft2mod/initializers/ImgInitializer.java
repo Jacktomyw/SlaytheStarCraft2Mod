@@ -76,23 +76,23 @@ public class ImgInitializer {
 
 // Power images
     //TODO add power imgs here
-    public static final String CONCENTRATED_POWER = makeExample("powers/Concentrated_power");
+    public static final String CONCENTRATED_POWER = "powers/Concentrated_power.png";
     public static final String DOUBLE_BLADE_POWER = makeExample("powers/DoubleBlade_power");
-    public static final String PSIONIC_POWER = makeExample("powers/Psionic_power");
-    public static final String SHIELD_POWER = makeExample("powers/Shield_power");
-    public static final String TORN_POWER = makeExample("powers/Torn_power");
-    public static final String DARKNESSAPPROACH_POWER = makeExample("powers/DarknessApproach_power");
-	public static final String GIFTSFROMXELNAGA_POWER = makeExample("powers/GiftsfromXelNaga_power");
-	public static final String PYLON_POWER = makeExample("powers/Pylon_power");
-	public static final String WAYOFDARKTEMPLAR_POWER = makeExample("powers/WayofDarkTemplar_power");
-	public static final String CONSECRATEME_POWER = makeExample("powers/CONSECRATEME_POWER");
-	public static final String COUNTERATTACK_POWER = makeExample("powers/CounterAttack_power");
-	public static final String DEFINITEHATRED_POWER = makeExample("powers/DefiniteHatred_power");
-	public static final String LAUGHING_POWER = makeExample("powers/Laughing_power");
-	public static final String BEINGLAUGHED_POWER = makeExample("powers/BeingLaughed_power");
-	public static final String SOULDRAW_POWER = makeExample("powers/SoulDraw_power");
-	public static final String SPIRITTHREAT_POWER = makeExample("powers/SpiritThreat_power");
-	public static final String DRAWREDUCTIONMULTIPLE_POWER = makeExample("powers/DrawReductionMultiple_power");
+    public static final String PSIONIC_POWER = "powers/Psionic_power.png";
+    public static final String SHIELD_POWER = "powers/Shield_power.png";
+    public static final String TORN_POWER = "powers/Torn_power.png";
+    public static final String DARKNESSAPPROACH_POWER = "powers/DarknessApproach_power.png";
+	public static final String GIFTSFROMXELNAGA_POWER = "powers/GiftsfromXelNaga_power.png";
+	public static final String PYLON_POWER = "powers/Pylon_power.png";
+	public static final String WAYOFDARKTEMPLAR_POWER = "powers/WayofDarkTemplar_power.png";
+	public static final String CONSECRATEME_POWER = "powers/CONSECRATEME_POWER.png";
+	public static final String COUNTERATTACK_POWER = "powers/CounterAttack_power.png";
+	public static final String DEFINITEHATRED_POWER = "powers/DefiniteHatred_power.png";
+	public static final String LAUGHING_POWER = "powers/Laughing_power.png";
+	public static final String BEINGLAUGHED_POWER = "powers/BeingLaughed_power.png";
+	public static final String SOULDRAW_POWER = "powers/SoulDraw_power.png";
+	public static final String SPIRITTHREAT_POWER = "powers/SpiritThreat_power.png";
+	public static final String DRAWREDUCTIONMULTIPLE_POWER = "powers/DrawReductionMultiple_power.png";
 	
 // Relic images
     //TODO add relic imgs here
@@ -101,25 +101,25 @@ public class ImgInitializer {
     public static final String HeartofProtoss_BLUE = "relics/HeartofProtoss_blue.png";
     public static final String HeartofProtoss_GREEN = "relics/HeartofProtoss_green.png";
     public static final String HeartofProtoss_OUTLINE = "relics/outline/HeartofProtoss.png";
-    public static final String IanCrystal = makeExample("relics/IanCrystal");
-    public static final String IanCrystal_OUTLINE = makeExample("relics/outline/ARelic");
-    public static final String KeyStone = makeExample("relics/KeyStone");
-    public static final String KeyStone_OUTLINE = makeExample("relics/outline/ARelic");
-    public static final String Khala = makeExample("relics/Khala");
-    public static final String Khala_OUTLINE = makeExample("relics/outline/ARelic");
-    public static final String KhaydarinAmulet = makeExample("relics/KhaydarinAmulet");
-    public static final String KhaydarinAmulet_OUTLINE = makeExample("relics/outline/ARelic");
-    public static final String MiniVoidSeeker = makeExample("relics/MiniVoidSeeker");
-    public static final String MiniVoidSeeker_OUTLINE = makeExample("relics/outline/ARelic");
-    public static final String UpgradingChain = makeExample("relics/UpgradingChain");
-    public static final String UpgradingChain_OUTLINE = makeExample("relics/outline/ARelic");
-    public static final String SolarBattleaxe = makeExample("relics/SolarBattleaxe");
-    public static final String SolarBattleaxe_OUTLINE = makeExample("relics/outline/ARelic");
+    public static final String IanCrystal = "relics/IanCrystal.png";
+    public static final String IanCrystal_OUTLINE = "relics/outline/IanCrystal.png";
+    public static final String KeyStone = "relics/KeyStone.png";
+    public static final String KeyStone_OUTLINE = "relics/outline/KeyStone.png";
+    public static final String Khala = "relics/Khala.png";
+    public static final String Khala_OUTLINE = "relics/outline/Khala.png";
+    public static final String KhaydarinAmulet = "relics/KhaydarinAmulet.png";
+    public static final String KhaydarinAmulet_OUTLINE = "relics/outline/KhaydarinAmulet.png";
+    public static final String MiniVoidSeeker = "relics/MiniVoidSeeker.png";
+    public static final String MiniVoidSeeker_OUTLINE = "relics/outline/MiniVoidSeeker.png";
+    public static final String UpgradingChain = "relics/UpgradingChain.png";
+    public static final String UpgradingChain_OUTLINE = "relics/outline/UpgradingChain.png";
+    public static final String SolarBattleaxe = "relics/SolarBattleaxe.png";
+    public static final String SolarBattleaxe_OUTLINE = "relics/outline/SolarBattleaxe.png";
 
     
 // Event images
     //TODO add event imgs here
-    public static final String ProtossLeaders_IMG = makeExample("relics/ARelic");	//need to change
+    public static final String ProtossLeaders_IMG = "events/ProtossLeaders.png";
     
 // Character assets
     //TODO add character assets here
@@ -131,7 +131,7 @@ public class ImgInitializer {
     public static final String PROTOSS_CORPSE = makeExample("char/protoss/corpse");
     
 // Mod Badge
-    public static final String BADGE_IMAGE = makeExample("Badge");
+    public static final String BADGE_IMAGE = "Badge.png";
     
 //Animations atlas and JSON files
     //TODO this part will be written after animation part complete

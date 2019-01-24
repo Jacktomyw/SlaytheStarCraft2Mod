@@ -37,7 +37,7 @@ public class SpiritThreatPower extends AbstractPower {
 	public void onAfterUseCard(AbstractCard card, UseCardAction action) {
 		if(card.hasTag(CardTagsEnum.OVERLOAD)) {
 			for(AbstractCard c : AbstractDungeon.player.hand.group) {
-				if(c.hasTag(CardTagsEnum.OVERLOAD)&&c.cost>0) {
+				if(c.hasTag(CardTagsEnum.OVERLOAD)&&c.costForTurn>0) {
 					c.costForTurn--;
 					c.isCostModifiedForTurn=true;
 				}

@@ -60,8 +60,8 @@ public class ChaosStrike extends OverLoadCustomCard{
 			}
 		}
 		AbstractCard c = overLoadCards.get(AbstractDungeon.cardRandomRng.random(overLoadCards.size()-1));
-		if(upgraded) {
-			c.setCostForTurn(0);
+		if(this.upgraded) {
+			c.upgrade();
 		}
 		AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
 	}

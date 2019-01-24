@@ -57,7 +57,7 @@ public class StretchLightning extends OverLoadCustomCard{
 	public void applyPowers() {
 		super.applyPowers();
 		this.rawDescription = DESCRIPTION;
-		this.rawDescription = this.rawDescription + EXTENDED_DESCRIPTION[0];
+		this.rawDescription = this.rawDescription + EXTENDED_DESCRIPTION[0] + (int)((float)this.damage*(float)this.magicNumber/100f) +EXTENDED_DESCRIPTION[1];
 		this.initializeDescription();
 	}
 	
@@ -67,7 +67,7 @@ public class StretchLightning extends OverLoadCustomCard{
 		AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AttackEffect.NONE));
 		CardCrawlGame.sound.play("ORB_LIGHTNING_EVOKE", 0.1F);
 		for(AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-			if(mo != m) {
+			if(mo != m && !mo.isDeadOrEscaped()) {
 				AbstractDungeon.effectList.add(new LightningEffect(mo.drawX, mo.drawY));
 				AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(p, (int) (this.damage*((float)this.magicNumber/100f)), this.damageTypeForTurn), AttackEffect.NONE));
 			}

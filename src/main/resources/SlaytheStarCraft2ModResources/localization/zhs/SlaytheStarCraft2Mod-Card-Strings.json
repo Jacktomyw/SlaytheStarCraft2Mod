@@ -148,7 +148,7 @@
 	"SlaytheStarCraft2Mod:ChaosStrike":{
 		"NAME": "混乱打击",
 		"DESCRIPTION": "造成 !D! 点伤害。随机将一张带有 超载 的牌加入你的手牌。 超载 2 。",
-		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。随机将一张带有 超载 的牌加入你的手牌，这张牌在本回合的费用变为 0 。 超载 2 。"
+		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。随机将一张升级过的带有 超载 的牌加入你的手牌。 超载 2 。"
 	},
 	"SlaytheStarCraft2Mod:CONSECRATEME!":{
 		"NAME": "供奉我！",
@@ -206,7 +206,7 @@
 		"UPGRADE_DESCRIPTION": "造成 !D! 点伤害。如果目标有异常状态，则改为造成 !SlaytheStarCraft2Mod:D2! 点伤害。给予 1 层 易伤 。 超载 2 。"
 	},
 	"SlaytheStarCraft2Mod:LightningFlush":{
-		"NAME": "闪电乱流",
-		"DESCRIPTION": "造成 !D! 点伤害。如果你的抽牌堆中有闪电乱流，再造成 !D! 点伤害。 超载 1 。 超载 后将这张牌的一个复制洗入弃牌堆。"
+		"NAME": "闪电奔涌",
+		"DESCRIPTION": "造成 !D! 点伤害。如果你的抽牌堆中有闪电奔涌，再造成 !D! 点伤害。 超载 1 。 超载 后将这张牌的一个复制洗入弃牌堆。"
 	}
 }
