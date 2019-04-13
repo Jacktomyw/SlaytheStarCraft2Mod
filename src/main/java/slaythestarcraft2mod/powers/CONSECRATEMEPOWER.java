@@ -39,7 +39,7 @@ public class CONSECRATEMEPOWER extends AbstractPower {
 	@Override
 	public int onAttacked(DamageInfo info, int damageAmount) {
 		if(info.owner==this.owner && damageAmount>0) {
-			this.owner.heal(damageAmount*this.amount, true);
+			this.owner.heal(damageAmount*this.amount+2, true);
 		}
 		return super.onAttacked(info, damageAmount);
 	}
