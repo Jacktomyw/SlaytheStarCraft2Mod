@@ -32,7 +32,7 @@ public class OblivionDescends extends CustomCard{
 	private static final CardType TYPE = CardType.ATTACK;
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
-	private static final int COST = 1;
+	private static final int COST = 0;
 	private static final int DAMAGE = 0;
 	private static final int MAGIC_NUMBER = 2;
 	private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;

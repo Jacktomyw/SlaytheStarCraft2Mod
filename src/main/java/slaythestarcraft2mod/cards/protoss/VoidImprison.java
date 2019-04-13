@@ -24,7 +24,6 @@ public class VoidImprison extends CustomCard{
 	
 	public static final String NAME = cardStrings.NAME;
 	public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-	public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 	
 	private static final CardRarity RARITY = CardRarity.RARE;
 	private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
@@ -65,8 +64,7 @@ public class VoidImprison extends CustomCard{
 	public void upgrade() {
 		if(!this.upgraded) {
 			this.upgradeName();
-			this.isEthereal = false;
-			this.rawDescription = UPGRADE_DESCRIPTION;
+			this.upgradeBaseCost(3);
 			this.initializeDescription();
 		}
 	}

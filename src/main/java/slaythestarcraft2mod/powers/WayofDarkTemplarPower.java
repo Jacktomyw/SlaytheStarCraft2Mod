@@ -39,7 +39,7 @@ public class WayofDarkTemplarPower extends AbstractPower {
 	public void updateDescription() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(DESCRIPTIONS[0]);
-		sb.append(5*this.amount);
+		sb.append(3*this.amount);
 		sb.append(DESCRIPTIONS[1]);
 		for(int i=0;i<this.amount;i++) {
 			sb.append(" [E] ");
@@ -72,7 +72,7 @@ public class WayofDarkTemplarPower extends AbstractPower {
 	public void atStartOfTurn() {
 		if(notReceiveDamageLastTurn || notDealDamageLastTurn) {
 			this.flash();
-			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new ShieldPower(this.owner, 5*this.amount),5*this.amount));
+			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new ShieldPower(this.owner, 3*this.amount),3*this.amount));
 			AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.amount));
 		}
 		notReceiveDamageLastTurn=true;

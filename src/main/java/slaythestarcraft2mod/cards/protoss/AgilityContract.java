@@ -33,8 +33,8 @@ public class AgilityContract extends OverLoadCustomCard{
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
 	private static final int COST = 0;
-	private static final int MAGIC_NUMBER = 2;
-	private static final int UPGRADE_PLUS_MAGIC_NUMBER = -1;
+	private static final int MAGIC_NUMBER = 5;
+	private static final int UPGRADE_PLUS_MAGIC_NUMBER = -2;
 	private static final int OVERLOAD = 1;
 	
 	public AgilityContract() {

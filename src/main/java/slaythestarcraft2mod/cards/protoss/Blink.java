@@ -30,8 +30,8 @@ public class Blink extends MultipleBasicValueAndShieldCustomCard{
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
 	private static final int COST = 0;
-	private static final int SHIELD = 5;
-	private static final int UPGRADE_PLUS_SHIELD = 3;
+	private static final int SHIELD = 3;
+	private static final int UPGRADE_PLUS_SHIELD = 2;
 	
 	public Blink() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

@@ -24,14 +24,16 @@ public class PowerofNerazimAction extends AbstractGameAction {
 		this.actionType = ActionType.SPECIAL;
 		ArrayList<AbstractCard> arr = AbstractDungeon.actionManager.cardsPlayedThisTurn;
 		int i = arr.size()-1;
-		while(arr.get(i).cardID.equals(SlaytheStarCraft2Mod.makeID("PowerofNerazim"))) {
-			i--;
-			if(i < 0) {
-				break;
-			}
-		}
 		if(i>=0) {
-			card = arr.get(i);
+			while(arr.get(i).cardID.equals(SlaytheStarCraft2Mod.makeID("PowerofNerazim"))) {
+				i--;
+				if(i < 0) {
+					break;
+				}
+			}
+			if(i>=0) {
+				card = arr.get(i);
+			}
 		}
 	}
 	

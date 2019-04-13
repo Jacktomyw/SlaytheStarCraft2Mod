@@ -1,6 +1,7 @@
 package slaythestarcraft2mod.cards.protoss;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -43,6 +44,7 @@ public class ShadowRush extends CustomCard{
 	@Override
 	public void use(AbstractPlayer p,AbstractMonster m) {
 		AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PsionicPower(p, this.magicNumber), this.magicNumber));
+		AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
 		if(!p.hasPower(SlaytheStarCraft2Mod.makeID("ConcentratedPower"))) {
 			AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new VulnerablePower(p, 2, false), 2));
 		}else {

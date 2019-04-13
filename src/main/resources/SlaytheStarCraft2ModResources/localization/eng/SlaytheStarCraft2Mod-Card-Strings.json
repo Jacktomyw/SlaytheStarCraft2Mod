@@ -69,7 +69,7 @@
 	},
 	"SlaytheStarCraft2Mod:ShadowRush":{
 		"NAME": "Shadow Rush",
-		"DESCRIPTION": "Gain !M! Psionic . If you do NOT have Concentrated ,gain 2 Vulnerable ."
+		"DESCRIPTION": "Gain !M! Psionic . Draw 1 card. If you do NOT have Concentrated ,gain 2 Vulnerable ."
 	},
 	"SlaytheStarCraft2Mod:ShadowStrike":{
 		"NAME": "Shadow Strike",
@@ -89,8 +89,7 @@
 	},
 	"SlaytheStarCraft2Mod:VoidImprison":{
 		"NAME": "Void Imprison",
-		"DESCRIPTION": " Stun all enemies. If you do NOT have Concentrated , Exhaust . NL Ethereal .",
-		"UPGRADE_DESCRIPTION": " Stun all enemies. If you do NOT have Concentrated , Exhaust ."
+		"DESCRIPTION": " Stun all enemies. If you do NOT have Concentrated , Exhaust . NL Ethereal ."
 	},
 	"SlaytheStarCraft2Mod:VoidPowerCannon":{
 		"NAME": "Void Power Cannon",
@@ -110,7 +109,7 @@
 	},
 	"SlaytheStarCraft2Mod:WayofDarkTemplar":{
 		"NAME": "Way of Dark Templar",
-		"DESCRIPTION": "At the start of your turn, if you do not receive damage that not be Blocked or defended by Shield last turn, or you do not give damage that not be Blocked last turn, gain 5 Shield and [E] ."
+		"DESCRIPTION": "At the start of your turn, if you do not receive damage that not be Blocked or defended by Shield last turn, or you do not give damage that not be Blocked last turn, gain 3 Shield and [E] ."
 	},
 	"SlaytheStarCraft2Mod:Wormhole":{
 		"NAME": "Wormhole",
@@ -152,8 +151,8 @@
 	},
 	"SlaytheStarCraft2Mod:CONSECRATEME!":{
 		"NAME": "CONSECRATE ME!",
-		"DESCRIPTION": "When you receive the damage and HP losing effect from yourself, gain healing equals to that value.",
-		"UPGRADE_DESCRIPTION": " Innate . When you receive the damage and HP losing effect from yourself, gain healing equals to that value."
+		"DESCRIPTION": "When you receive the damage and HP losing effect from yourself, gain healing equals to that value plus 2 .",
+		"UPGRADE_DESCRIPTION": " Innate . When you receive the damage and HP losing effect from yourself, gain healing equals to that value plus 2 ."
 	},
 	"SlaytheStarCraft2Mod:CounterAttack":{
 		"NAME": "Counter Attack",

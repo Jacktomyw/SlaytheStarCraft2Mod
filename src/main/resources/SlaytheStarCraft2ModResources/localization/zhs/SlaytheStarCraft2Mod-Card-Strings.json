@@ -69,7 +69,7 @@
 	},
 	"SlaytheStarCraft2Mod:ShadowRush":{
 		"NAME": "暗影疾行",
-		"DESCRIPTION": "获得 !M! 层 灵能 。如果你不拥有 专注 ，获得2层 易伤 。"
+		"DESCRIPTION": "获得 !M! 层 灵能 ，抽 1 张牌。如果你不拥有 专注 ，获得2层 易伤 。"
 	},
 	"SlaytheStarCraft2Mod:ShadowStrike":{
 		"NAME": "暗影打击",
@@ -89,8 +89,7 @@
 	},
 	"SlaytheStarCraft2Mod:VoidImprison":{
 		"NAME": "虚空禁锢",
-		"DESCRIPTION": " 击晕 所有敌人。如果你不拥有 专注 ， 消耗 。 NL 虚无 。",
-		"UPGRADE_DESCRIPTION": " 击晕 所有敌人。如果你不拥有 专注 ， 消耗 。"
+		"DESCRIPTION": " 击晕 所有敌人。如果你不拥有 专注 ， 消耗 。 NL 虚无 。"
 	},
 	"SlaytheStarCraft2Mod:VoidPowerCannon":{
 		"NAME": "虚空幽能炮",
@@ -110,7 +109,7 @@
 	},
 	"SlaytheStarCraft2Mod:WayofDarkTemplar":{
 		"NAME": "黑暗圣堂之路",
-		"DESCRIPTION": "在你的回合开始时，如果你上回合没有受到未被 格挡 或被 护盾 抵消的伤害，或者没有造成未被 格挡 的伤害，获得 5 点 护盾 ，下个回合开始时获得 [E] 。"
+		"DESCRIPTION": "在你的回合开始时，如果你上回合没有受到未被 格挡 或被 护盾 抵消的伤害，或者没有造成未被 格挡 的伤害，获得 3 点 护盾 ，下个回合开始时获得 [E] 。"
 	},
 	"SlaytheStarCraft2Mod:Wormhole":{
 		"NAME": "虫洞",
@@ -152,8 +151,8 @@
 	},
 	"SlaytheStarCraft2Mod:CONSECRATEME!":{
 		"NAME": "供奉我！",
-		"DESCRIPTION": "受到来自自己的伤害和生命损失效果时，回复相当于其数值的生命。",
-		"UPGRADE_DESCRIPTION": " 固有 。受到来自自己的伤害和生命损失效果时，回复相当于其数值的生命。"
+		"DESCRIPTION": "受到来自自己的伤害和生命损失效果时，回复相当于其数值 + 2 的生命。",
+		"UPGRADE_DESCRIPTION": " 固有 。受到来自自己的伤害和生命损失效果时，回复相当于其数值 + 2 的生命。"
 	},
 	"SlaytheStarCraft2Mod:CounterAttack":{
 		"NAME": "反击",

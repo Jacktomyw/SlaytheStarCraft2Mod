@@ -31,7 +31,7 @@ public class CounterAttack extends CustomCard{
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
 	private static final int COST = 2;
-	private static final int MAGIC_NUMBER = 5;
+	private static final int MAGIC_NUMBER = 6;
 	private static final int UPGRADE_PLUS_MAGIC_NUMBER = 2;
 	
 	

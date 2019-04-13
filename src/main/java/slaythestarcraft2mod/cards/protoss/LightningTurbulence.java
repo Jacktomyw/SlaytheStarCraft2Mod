@@ -34,7 +34,7 @@ public class LightningTurbulence extends OverLoadCustomCard{
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
 	private static final int COST = 1;
-	private static final int DMG = 6;
+	private static final int DMG = 5;
 	private static final int UPGRADE_PLUS_DMG = 2;
 	private static final int OVERLOAD = 3;
 	

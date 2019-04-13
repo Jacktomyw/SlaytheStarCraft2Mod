@@ -32,8 +32,8 @@ public class ShadowBarrier extends MultipleBasicValueAndShieldCustomCard{
 	public static final CardColor COLOR = AbstractCardEnum.PROTOSS_BLUE;
 	
 	private static final int COST = 2;
-	private static final int SHIELD = 7;
-	private static final int UPGRADE_PLUS_SHIELD = 2;
+	private static final int SHIELD = 4;
+	private static final int UPGRADE_PLUS_SHIELD = 1;
 	
 	public ShadowBarrier() {
 		super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
