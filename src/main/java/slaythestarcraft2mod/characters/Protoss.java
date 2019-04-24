@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.core.Settings.GameLanguage;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
@@ -48,33 +49,24 @@ public class Protoss extends CustomPlayer{
             "SlaytheStarCraft2ModResources/images/char/protoss/orb/layer5d.png", };
     
     public Protoss(String name, PlayerClass setClass) {
-    	super(name,setClass,orbTextures,"SlaytheStarCraft2ModResources/images/char/protoss/orb/vfx.png",null,
-    			new SpriterAnimation("SlaytheStarCraft2ModResources/images/char/protoss/Spriter/theDefaultAnimation.scml"));
+    	super(name,setClass,orbTextures,"SlaytheStarCraft2ModResources/images/char/protoss/orb/vfx.png",null,null,null);
     	
     	
-    	initializeClass(null,
+    	initializeClass(ImgInitializer.makePath(ImgInitializer.PORTOSS_MAIN),
     			ImgInitializer.makePath(ImgInitializer.PROTOSS_SHOULDER_AFTER),
     			ImgInitializer.makePath(ImgInitializer.PROTOSS_SHOULDER),
     			ImgInitializer.makePath(ImgInitializer.PROTOSS_CORPSE),
     			getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
-    	
-    	
-    	this.loadAnimation(ImgInitializer.makePath(ImgInitializer.PROTOSS_SKELETON_ATLAS), 
-    			ImgInitializer.makePath(ImgInitializer.PROTOSS_SKELETON_JSON),1.0f);
-    	AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
-    	e.setTime(e.getEndTime() * MathUtils.random());
-    	
-    	
-    	
-    	 this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
-         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
+    	 
+    	 this.dialogX = (this.drawX + 0.0F * Settings.scale); 
+         this.dialogY = (this.drawY + 220.0F * Settings.scale); 
 
     }
     
     @Override
     public CharSelectInfo getLoadout() {
     	return new CharSelectInfo("Protoss",
-                "神族 NL " + "神之长子 ",
+                "神之长子，纯粹的本质。 NL 为了艾尔！En Taro Adun！ ",
                 STARTING_HP, MAX_HP, ORB_SLOTS, STARTING_GOLD, CARD_DRAW, this, getStartingRelics(),
                 getStartingDeck(), false);
     }
@@ -122,7 +114,7 @@ public class Protoss extends CustomPlayer{
     // ascension 14 or higher. (ironclad loses 5, defect and silent lose 4 hp respectively)
     @Override
     public int getAscensionMaxHPLoss() {
-        return 0;
+        return 4;
     }
     
  // Should return the card color enum to be associated with your character.
@@ -147,7 +139,11 @@ public class Protoss extends CustomPlayer{
  // Should return class name as it appears in run history screen.
     @Override
     public String getLocalizedCharacterName() {
-        return "Protoss";
+    	if (Settings.language == GameLanguage.ZHS) {
+			return "神族";
+		}else {
+			return "Protoss";
+		}
     }
 
     //Which starting card should specific events give you?
@@ -166,7 +162,11 @@ public class Protoss extends CustomPlayer{
  // The class name as it appears next to your player name in game	
     @Override
     public String getTitle(AbstractPlayer.PlayerClass playerClass) {
-        return "Protoss";
+    	if (Settings.language == GameLanguage.ZHS) {
+			return "神族";
+		}else {
+			return "Protoss";
+		}
     }
 
     // Should return a new instance of your character, sending this.name as its name parameter.
@@ -194,7 +194,7 @@ public class Protoss extends CustomPlayer{
     @Override
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
         return new AbstractGameAction.AttackEffect[] {
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY };
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL };
     }
 
     // Should return a string containing what text is shown when your character is
@@ -202,7 +202,11 @@ public class Protoss extends CustomPlayer{
     // core to its maximum..."
     @Override
     public String getSpireHeartText() {
-        return "You touch the heart.";
+    	if (Settings.language == GameLanguage.ZHS) {
+			return "你将你的灵刃充能到极限……";
+		}else {
+			return "You charge your psionic blade to its maximum...";
+		}
     }
 
     // The vampire events refer to the base game characters as "brother", "sister",
@@ -210,7 +214,11 @@ public class Protoss extends CustomPlayer{
     // the full text that will be displayed as the first screen of the vampires event.
     @Override
     public String getVampireText() {
-        return "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~son~ ~of~ ~gods,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~";
+    	if (Settings.language == GameLanguage.ZHS) {
+			return "在一条昏暗的街上，你遇见几个戴着兜帽的人在进行某种黑暗的仪式。当你靠近时，他们全都同时转身面对你，让你觉得十分诡异。 其中个子最高的一个微微一笑，露出了长长的尖牙，向你伸出了一只苍白而瘦长的手： NL ~“加入我们，神之长子。一起来感受高塔的温暖吧。”~";
+		}else {
+			return "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~son~ ~of~ ~gods,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~";
+		}
     }
 
 }
