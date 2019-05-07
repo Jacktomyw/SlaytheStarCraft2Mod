@@ -28,6 +28,7 @@ public class PowerofNerazimAction extends AbstractGameAction {
 			while(arr.get(i).cardID.equals(SlaytheStarCraft2Mod.makeID("PowerofNerazim"))) {
 				i--;
 				if(i < 0) {
+					this.isDone=true;
 					break;
 				}
 			}
@@ -39,7 +40,7 @@ public class PowerofNerazimAction extends AbstractGameAction {
 	
 	
 	@Override
-	public void update() {{
+	public void update() {
 
 		if (amount > 0) {
 			AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(true);
@@ -56,6 +57,7 @@ public class PowerofNerazimAction extends AbstractGameAction {
 			c.freeToPlayOnce = true;
 			c.purgeOnUse = true;
 			AbstractDungeon.actionManager.cardsPlayedThisCombat.add(c);
+			AbstractDungeon.actionManager.cardsPlayedThisTurn.add(c);
 			c.calculateCardDamage(mo);
 			AbstractDungeon.actionManager.currentAction = null;
 			c.use(p, mo);
@@ -79,5 +81,5 @@ public class PowerofNerazimAction extends AbstractGameAction {
 		}else {	
 			this.isDone = true;
 		}
-	}}
+	}
 }
